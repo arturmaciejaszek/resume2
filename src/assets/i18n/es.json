@@ -1,0 +1,111 @@
+{
+    "home": {
+        "title": "Bienvenido",
+        "name": "Nombre",
+        "greeting": "Saludo",
+        "alt": "mi foto"
+    },
+    "edu": {
+        "title": "Educación",
+        "school": "Nombre de la escuela",
+        "alt": "logo de la escuela",
+        "faculty": "facultad",
+        "spec": "especialización",
+        "path": "enlace del logo",
+        "type": "tipo",
+        "sDate": "Fecha de inicio",
+        "eDate": "Fecha de finalización",
+        "course": "Nombre del curso",
+        "desc": "descripción",
+        "mark": "nota: ",
+        "courses": "los cursos",
+        "+course": "Añadir un curso",
+        "place": {
+            "school": "Hogwarts, Colegio de Magia",
+            "alt": "logo de la escuela",
+            "faculty": "Ravenclaw",
+            "spec": "domesticando bestias salvajes",
+            "path": "externo o relativo",
+            "type": "maestría",
+            "course": "Alquimia",
+            "desc": "preparando y bebiendo pociones"
+        }
+    },
+    "work": {
+        "title": "Experiencia laboral",
+        "company": "Nombre de la empresa",
+        "position": "puesto",
+        "path": "enlace del logo",
+        "alt": "logo de la empresa",
+        "sDate": "Fecha de inicio",
+        "eDate": "Fecha de finalización",
+        "resps": "Responsabilidades",
+        "+resp": "Añadir responsabilidad",
+        "resp": "Responsabilidad",
+        "place": {
+            "company": "Monstruos, S.A.",
+            "position": "coco",
+            "path": "externo o relativo",
+            "alt": "logo de la empresa",
+            "resp": "ocultarsando debajo la cama"
+        }
+    },
+    "skills": {
+        "title": "Habilidades",
+        "name": "Nombre de la habilidad",
+        "path": "enlace de la habilidad",
+        "details": "detalles",
+        "prof": "Competencia",
+        "tags": "hashtags",
+        "filter": "Busca por ejemplo: idioma",
+        "place": {
+            "name": "Huevos revueltos",
+            "path": "externo o relativo",
+            "details": "probablemente comestible",
+            "prof": "8",
+            "tags": "#huevos#comida#desayuno"
+        }
+    },
+    "contact": {
+        "main": "Si estás interesado, puedes contactarme con formulario abajo o los enlaces sociales",
+        "title": "Contacto",
+        "name": "Nombre",
+        "mail": "Correro electronico",
+        "query": "pregunta",
+        "send": "Enviar",
+        "+social": "Añadir enlace sociale",
+        "msgSent": "Muchos gracias por su interés. Pondré en contacto tan pronto como puedo."
+    },
+    "social": {
+        "name": "página social",
+        "icon": "icono social",
+        "link": "enlace de la página"
+    },
+    "footer": {
+        "alt": "mi foto",
+        "text": "Hecho por mí mismo",
+        "access": "Acceso",
+        "username": "Usario",
+        "password": "Contraseña",
+        "login": "Iniciar sesión",
+        "reg": "Registro",
+        "logout": "Cerrar sesión",
+        "lang": "no su idioma?",
+        "regtext": "todavía no tiene una cuenta? ",
+        "getback": "Volver a inicio",
+        "wrongpass": "Contraseña incorrecta",
+        "usertaken": "Nombra ya tomado"
+    },
+    "util": {
+        "save": "Guardar",
+        "cancel": "Cancelar",
+        "edit": "Editar",
+        "delete": "Borrar"
+    },
+    "control": {
+        "commit": "Cometer",
+        "discard": "Descartar",
+        "clone": "Clonar",
+        "logout": "Salir"
+    }
+}

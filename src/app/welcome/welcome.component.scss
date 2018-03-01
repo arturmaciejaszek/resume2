@@ -1,0 +1,25 @@
+// * {
+//     border: 1px solid red;
+// }
+
+.welcome {
+    &__greeting {
+        margin-top: 1rem;
+        white-space: pre-wrap;
+        text-align: left;
+        line-height: 1.6;
+        font-style: italic;
+        font-size: 1.4rem;
+    }
+    &__sig {
+        max-height: 264px;
+        max-width: 154px;
+    }
+    &__photo {
+        float: right;
+        filter: drop-shadow(28px 2px 2px #222);
+        // width: 100%;
+        // height: auto;
+        // shape-outside: url('/assets/img/am-smile.png');
+    }   
+}

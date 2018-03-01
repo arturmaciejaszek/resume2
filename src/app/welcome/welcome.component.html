@@ -1,0 +1,18 @@
+<section class="welcome">
+  <div class="section__title">
+      <h2>{{ 'home.title' | translate }}</h2>
+  </div>
+  <div fxLayoutAlign="center end">
+    <div fxLayout="column"> 
+      <span class="welcome__greeting">
+        {{ 'home.greeting' | translate }}
+        <img class="welcome__sig" src="./assets/img/sig.png" alt="{{ 'home.sig' | translate }}">
+      </span>  
+    </div>
+    <div fxFlex="40%">
+      <img class="welcome__photo"
+        src="./assets/img/am-smile.png" 
+        alt="{{ 'home.alt' | translate }}">
+    </div>
+  </div>
+</section>

@@ -1,0 +1,99 @@
+{
+    "home": {
+        "title": "Welcome",
+        "greeting": "Foremost I would like to thank you for visiting my site, which is in fact my résumé. \nI am a graduate of IT related studies (class '13), I have a master in Management ('15) and in November '17 I decided to change my occupation by picking up programming, with front-end or full-stack in mind, the result of which you can see on this site.\n\tI live in Poznań, Poland and I am currently looking for a job in the Industry, where I will be able to improve my skills and get aided in my programming endeavors. I am highly communicative. Most of my life I worked with people by supporting marketing events and fair exhibitions. Finishing Business Communication, IT and Econometry studies made me a mix of different worlds. If you are looking for a person, who in a long run, can be a bridge between departments or who can fit in diverse roles I might be the one for the job.\n\tPlease look around the site and feel free to create a dummy account to see how the data can be editted.\nIf you want to contact me or leave some feedback you can use the contact form.\nI will highly appreciate that.\n\nAlso I wish you a marvelous day :)\n\nBest regards\n",
+        "alt": "My photo"
+    },
+    "edu": {
+        "title": "Education",
+        "school": "School Name",
+        "alt": "school logo",
+        "faculty": "Faculty",
+        "spec": "Specialization",
+        "path": "logo path",
+        "type": "Type",
+        "sDate": "Start Date",
+        "eDate": "End Date",
+        "course": "Course Name",
+        "desc": "description",
+        "mark": "mark: ",
+        "courses": "Courses",
+        "+course": "Add Course",
+        "place": {
+            "school": "Hogwarts School of Witchcraft and Wizardry",
+            "alt": "school logo",
+            "faculty": "Ravenclaw",
+            "spec": "Taming wild beasts",
+            "path": "external or relative",
+            "type": "master",
+            "course": "Alchemy",
+            "desc": "brewing and drinking potions"
+        }
+    },
+    "work": {
+        "title": "Work experience",
+        "company": "Company Name",
+        "position": "Position",
+        "path": "logo path",
+        "alt": "company logo",
+        "sDate": "Start Date",
+        "eDate": "End Date",
+        "resps": "Responsibilities",
+        "+resp": "Add Responsibility",
+        "resp": "Responsibility",
+        "place": {
+            "company": "Monster Inc.",
+            "position": "bogeyman",
+            "path": "external or relative",
+            "alt": "company logo",
+            "resp": "hiding under the bed"
+        }
+    },
+    "skills": {
+        "title": "Skills",
+        "tech": "Technologies",
+        "langs": "Languages",
+        "soft": "Software",
+        "misc": "Misc."
+    },
+    "contact": {
+        "main": "If you are interested you can reach me via the form below or social links",
+        "title": "Contact",
+        "name": "Name",
+        "mail": "Email address",
+        "query": "query",
+        "send": "Send",
+        "+social": "Add Social",
+        "site": "Site Name",
+        "class": "Font Awesome Class",
+        "link": "site link",
+        "msgSent": "Thank you for your interest. I will reach back to you as soon as I can"
+    },
+    "footer": {
+        "alt": "my photo",
+        "text": "Made with my own two hands",
+        "access": "Access",
+        "username": "Username",
+        "password": "Password",
+        "login": "Login",
+        "reg": "Register",
+        "logout": "Logout",
+        "lang": "not your language?",
+        "regtext": "Don't have an account yet? ",
+        "getback": "Back to login panel",
+        "wrongpass": "Wrong password",
+        "usertaken": "Username already taken"
+    },
+    "util": {
+        "save": "Save",
+        "cancel": "Cancel",
+        "edit": "Edit",
+        "delete": "Delete"
+    },
+    "control": {
+        "commit": "Commit",
+        "discard": "Discard",
+        "clone": "Clone",
+        "logout": "Logout"
+    }
+}

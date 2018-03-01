@@ -1,0 +1,12 @@
+@import "../theme.scss";
+
+.section__title {
+    display: inline-block;
+    color: mat-color($primary);
+    // text-transform: uppercase;
+    border-bottom: 1px solid mat-color($primary);
+
+    & > h2 {
+        margin-bottom: 1rem;
+    }
+}

@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+// @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "./theme.scss";
+
+@import "./sass/typography";
+@import "./sass/components";
+@import "./sass/utilities";
+@import "./sass/variables";
+@import "./sass/animations";
+
+html {
+    font-size: 10px;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+  }
+  
+body {
+    margin: 0;
+    font-size: 1.6rem;
+    text-align: center;
+    max-width: 120rem;
+    margin: auto;
+}
+
+.mat-divider {
+    border-color: mat-color($primary);
+    // filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 7.5));
+}

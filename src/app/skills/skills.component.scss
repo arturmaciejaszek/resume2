@@ -1,0 +1,31 @@
+.skills {
+    // min-height: 70vh;
+
+    &__container {
+        height: 70vh
+    }
+
+    &__display {
+        min-height: 30vh;
+        min-width: 50%;
+    }
+}
+
+mat-card {
+    height: 40vh;
+    width: 15vw;
+}
+
+mat-tab-group {
+    margin-top: 3rem;
+}
+
+// .star {
+//     color: yellow;
+//     transform: scale(1.1);
+// }
+
+// .half {
+//     color: yellow;
+//     transform: scale(1.1);
+// }

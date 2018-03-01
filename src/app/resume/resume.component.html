@@ -1,0 +1,34 @@
+<div fxLayoutAlign="center" fxLayout="column">
+
+<!-- HEADER -->
+<div class="shadow">
+    <header class="header" >
+        <h1 fxFlex>Artur Roman Maciejaszek</h1>
+      </header>
+</div>
+
+<!-- MAIN -->
+<main>
+  <app-welcome></app-welcome>
+  <mat-divider></mat-divider>
+  <app-skills></app-skills>
+  <mat-divider></mat-divider>
+  <app-work></app-work>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <img fxLayoutAlign="center center" src="./assets/img/am.png" alt="{{ 'footer.alt' | translate }}">
+    <p>{{ 'footer.text' | translate }}</p>
+  </div>
+  <span fxFlex></span>
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <p>{{ 'footer.lang' | translate}}</p>
+    <select [(ngModel)]="language" (ngModelChange)="onChange($event)">
+        <option *ngFor="let lang of langs" [ngValue]="lang">{{lang}}</option>
+    </select>
+  </div>
+</footer>
+
+</div>

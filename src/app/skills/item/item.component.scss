@@ -1,0 +1,23 @@
+
+.logo {
+    height: 7rem;
+    width: auto;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 7.5));
+    margin: 1.5rem;
+    cursor: pointer;
+    transition: all .5s;
+
+    &:hover {
+        transform: scale(1.2);
+        filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 7.5));
+    }
+
+    &:active {
+        transform: scale(1.1);
+        filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 7.5));
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

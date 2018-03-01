@@ -1,0 +1,75 @@
+<section class="skills">
+  <div class="section__title">
+      <h2>{{ 'skills.title' | translate }}</h2>
+  </div>
+  <div class="skills__container">
+    
+    <!-- CONTROL -->
+    <mat-tab-group fxFlex="70%">
+        <!-- COMMENTED OUT COUSE LABELS ARE BETTER HARDCODED NO ASYNC MAMBO JUMBO AND SAVES QUITE A LOT OF CODE -->
+        <!-- <mat-tab *ngFor="let group of skillGroup" [label]="group">
+          <div class="skills__display">
+            <app-item 
+            *ngFor="let item of dataState[group]" 
+            [skill]="item" 
+            [group]="group" 
+            (click)="setItem(item, group)">
+            </app-item>
+          </div>
+        </mat-tab> -->
+        <mat-tab label="{{ 'skills.langs' | translate }}">
+          <div class="skills__display" fxLayoutAlign="center center">
+            <app-item 
+            *ngFor="let item of dataState.langs" 
+            [skill]="item" 
+            (click)="setItem(item)">
+            </app-item>
+          </div>
+        </mat-tab>
+        <mat-tab label="{{ 'skills.tech' | translate }}">
+          <div class="skills__display" fxLayoutAlign="center center">
+            <app-item 
+            *ngFor="let item of dataState.tech" 
+            [skill]="item" 
+            (click)="setItem(item)">
+            </app-item>
+          </div>
+        </mat-tab>
+        <mat-tab label="{{ 'skills.soft' | translate }}">
+          <div class="skills__display" fxLayoutAlign="center center">
+            <app-item 
+            *ngFor="let item of dataState.soft" 
+            [skill]="item" 
+            (click)="setItem(item)">
+            </app-item>
+          </div>
+        </mat-tab>
+        <mat-tab label="{{ 'skills.misc' | translate }}">
+          <div class="skills__display" fxLayoutAlign="center center">
+            <app-item 
+            *ngFor="let item of dataState.misc" 
+            [skill]="item" 
+            (click)="setItem(item)">
+            </app-item>
+          </div>
+        </mat-tab>
+    </mat-tab-group>
+    <mat-divider [vertical]="true"></mat-divider>
+
+    <!-- DETAILS -->
+    <div fxFlex="30%" fxLayout="column" fxLayoutAlign="center center">
+        <mat-card>
+            <mat-card-title>{{ selectedSkill.name }}</mat-card-title>
+            <mat-card-subtitle>{{ selectedSkill.group }}</mat-card-subtitle>
+            <mat-card-content>{{ selectedSkill.details }}</mat-card-content>
+            <mat-card-footer fxLayout="space-between" fxLayoutAlign="center center">
+              <mat-icon class="star" *ngFor="let full of stars.full">star</mat-icon>
+              <mat-icon class="half" *ngFor="let half of stars.half">star_half</mat-icon>
+              <mat-icon class="empty" *ngFor="let empty of stars.empty">star_border</mat-icon>
+            </mat-card-footer>
+        </mat-card>
+    </div>
+    <!-- <button mat-button (click)="check()">CHECK</button> -->
+  </div>
+</section>
+  
