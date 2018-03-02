@@ -12,7 +12,7 @@
     </mat-panel-title>
     <mat-panel-description fxLayout="column" fxLayoutAlign="center end">
       <span>{{ work.position }} </span>
-      <span>{{ work.startDate }} -- {{ work.endDate }}</span>
+      <span>{{ work.startDate | date:'MM.yyyy' }} - {{ work.endDate | date:'MM.yyyy' }}</span>
     </mat-panel-description>
   </mat-expansion-panel-header>
   <ul class="responsibilities">

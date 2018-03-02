@@ -1,3 +1,8 @@
-<p>
-  education works!
-</p>
+<section class="edu">
+    <div class="section__title">
+        <h2>{{ 'edu.title' | translate }}</h2>
+    </div>
+    <div class="edu__items">
+      <app-edu-item *ngFor="let edu of dataState |sortby:'endDate':'date'" [edu]="edu"></app-edu-item>
+    </div>
+</section>

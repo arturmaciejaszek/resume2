@@ -18,7 +18,6 @@ export class WorkComponent implements OnInit, OnDestroy {
       .map( res => res.work)
       .subscribe(res => {
         this.dataState = res;
-        console.log(this.dataState);
     } );
   }
 

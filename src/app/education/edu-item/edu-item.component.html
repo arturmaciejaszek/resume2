@@ -1,0 +1,14 @@
+<mat-card class="mat-elevation-z8" fxLayout="row">
+  <div fxFlex="60%" fxLayout="row">
+    <img src="/assets/img/{{ edu.logo }}" alt="logo" class="logo" fxFlex="center">
+    <div>
+      <mat-card-title>{{ edu.faculty }}</mat-card-title>
+      <mat-card-subtitle>{{ edu.spec }}</mat-card-subtitle>
+    </div>
+  </div>
+  <mat-card-content fxLayout="column" fxLayoutAlign="center end">
+    <span>{{ edu.type }}</span>
+    <span>{{ edu.startDate | date:'MM.yyyy' }} - {{ edu.endDate | date:'MM.yyyy' }}</span>
+    <span>{{ edu.school }}</span>
+  </mat-card-content>
+</mat-card>

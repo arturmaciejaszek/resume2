@@ -3,6 +3,6 @@
       <h2>{{ 'work.title' | translate }}</h2>
   </div>
   <div class="work__items">
-    <app-work-item *ngFor="let work of dataState" [work]="work"></app-work-item>
+    <app-work-item *ngFor="let work of dataState |sortby:'endDate':'date'" [work]="work"></app-work-item>
   </div>
 </section>
