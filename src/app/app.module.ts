@@ -24,6 +24,7 @@ import { EducationComponent } from './education/education.component';
 import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
 import { ItemComponent } from './skills/item/item.component';
+import { WorkItemComponent } from './work/work-item/work-item.component';
 
 
 const appRoutes: Routes = [
@@ -40,7 +41,8 @@ const appRoutes: Routes = [
     EducationComponent,
     WorkComponent,
     ContactComponent,
-    ItemComponent
+    ItemComponent,
+    WorkItemComponent
   ],
   imports: [
     BrowserModule,

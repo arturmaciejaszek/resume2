@@ -2,6 +2,7 @@ import { DataService } from './../shared/data.service';
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
+// import { en } from './../../data';
 
 @Component({
   selector: 'app-resume',
@@ -17,6 +18,7 @@ export class ResumeComponent implements OnInit {
   ngOnInit() {
     this.data.dataInit();
     this.langs = this.translate.getLangs();
+    // this.data.pushData(en);
   }
 
   onChange(e) {

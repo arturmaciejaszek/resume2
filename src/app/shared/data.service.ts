@@ -31,4 +31,10 @@ export class DataService {
             });
     }
 
+    pushData(data) {
+        this.db.collection('en').doc('tDZCsr9qk7qB65QZYwtS')
+            .update(data).then( res => console.log(res) ).catch( err => console.log(err));
+    }
+
+
 }

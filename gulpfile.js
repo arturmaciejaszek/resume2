@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const svgstore = require('gulp-svgstore');
 const svgmin = require('gulp-svgmin');
 const path = require('path');
+
  
 gulp.task('svgstore', function () {
     return gulp
