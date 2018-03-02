@@ -19,7 +19,6 @@ export class EducationComponent implements OnInit, OnDestroy {
       .map( res => res.education)
       .subscribe(res => {
         this.dataState = res;
-        console.log(this.dataState);
     } );
   }
 

@@ -1,0 +1,38 @@
+.contact {
+    min-height: 50vh;
+    margin-bottom: 4rem;
+
+    &__box {
+        height: 22rem;
+        width: 80%;
+        margin: 1rem auto;
+        padding: 2rem;
+    }
+
+}
+
+form {
+    // height: 80%;
+
+    & > div {
+        height: 100%;
+        width: 100%;
+    }
+
+    & > button {
+        margin-top: 1.5rem;
+    }
+}
+
+.area {
+    width: 25vw;
+}
+
+.logo {
+    height: 2rem;
+    width: auto;
+}
+
+.socials {
+    margin-top: 4rem;
+}
