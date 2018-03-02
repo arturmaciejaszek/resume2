@@ -33,7 +33,6 @@ export class SkillsComponent implements OnInit, OnDestroy {
       .subscribe(res => {
         this.dataState = res;
         // this.skillGroup = Object.keys(this.dataState);
-        console.log(this.dataState);
     } );
   }
 

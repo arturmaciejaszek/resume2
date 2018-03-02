@@ -1,3 +1,8 @@
-<p>
-  work works!
-</p>
+<section class="work">
+  <div class="section__title">
+      <h2>{{ 'work.title' | translate }}</h2>
+  </div>
+  <div class="work__items">
+    <app-work-item *ngFor="let work of dataState |sortby:'endDate':'date'" [work]="work"></app-work-item>
+  </div>
+</section>

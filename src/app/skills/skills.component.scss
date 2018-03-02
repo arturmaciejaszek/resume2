@@ -2,18 +2,22 @@
     // min-height: 70vh;
 
     &__container {
-        height: 70vh
+        min-height: 70vh;
+        max-height: 500px;
     }
 
     &__display {
-        min-height: 30vh;
-        min-width: 50%;
+        min-height: 60vh;
+        width: 100%;
+        overflow: hidden;
     }
 }
 
 mat-card {
     height: 40vh;
     width: 15vw;
+    max-width: 200px;
+    max-height: 300px;
 }
 
 mat-tab-group {

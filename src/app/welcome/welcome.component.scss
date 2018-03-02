@@ -17,9 +17,15 @@
     }
     &__photo {
         float: right;
-        filter: drop-shadow(28px 2px 2px #222);
+        filter: drop-shadow(28px 0px 2px #222);
         // width: 100%;
         // height: auto;
         // shape-outside: url('/assets/img/am-smile.png');
+
+        &--mobile {
+            margin-top: 2rem;
+            height: 15vh;
+            width: auto;
+        }
     }   
 }

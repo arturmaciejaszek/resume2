@@ -1,0 +1,39 @@
+
+mat-expansion-panel {
+    width: 80%;
+    margin: 1rem auto;
+}
+
+mat-panel-description {
+    padding-right: 2rem;
+}
+
+.logo {
+    max-height: 6rem;
+    max-width: 6rem;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 7.5));
+    margin: 1rem;
+    margin-right: 1.5rem;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.responsibilities {
+    width: 70%;
+    margin: auto;
+    text-align: left;
+}
+
+@media screen and (max-width: 599px) {
+    .mobile  {
+        margin-bottom: 1.5rem;
+    }
+    mat-panel-description {
+        padding: 0;
+    }
+    mat-panel-title {
+        text-align: left;
+    }
+}
