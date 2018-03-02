@@ -10,6 +10,7 @@ import { Http, Headers } from '@angular/http';
 export class ContactComponent implements OnInit {
   pat: RegExp;
   msgSent = false;
+  showSpinner = false;
 
   constructor(private http: Http) { }
 
@@ -18,21 +19,28 @@ export class ContactComponent implements OnInit {
   }
 
   onSubmit(form: NgForm) {
-    console.log(form.value);
+    this.showSpinner = true;
     this.sendMail({
       name: form.value.name,
       email: form.value.email,
       query: form.value.query
     }).subscribe(
-      res => this.msgSent = true
-      // MAKE THE RESPONSE POP UP OR SMTH
+      res => {
+        if (res.json()) {
+          this.showSpinner = false;
+          form.resetForm();
+          this.msgSent = true;
+        } else {
+          this.showSpinner = false;
+        }
+      }
     );
   }
 
   sendMail({name: name, email: email, query: query}) {
     const headers = new Headers();
     headers.append('Content-Type', 'application/json');
-    return this.http.post('/contact', {
+    return this.http.post('https://us-central1-resume2-amaciejaszek.cloudfunctions.net/sendEmail', {
       name: name,
       email: email,
       query: query

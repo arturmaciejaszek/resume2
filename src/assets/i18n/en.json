@@ -5,49 +5,10 @@
         "alt": "My photo"
     },
     "edu": {
-        "title": "Education",
-        "school": "School Name",
-        "alt": "school logo",
-        "faculty": "Faculty",
-        "spec": "Specialization",
-        "path": "logo path",
-        "type": "Type",
-        "sDate": "Start Date",
-        "eDate": "End Date",
-        "course": "Course Name",
-        "desc": "description",
-        "mark": "mark: ",
-        "courses": "Courses",
-        "+course": "Add Course",
-        "place": {
-            "school": "Hogwarts School of Witchcraft and Wizardry",
-            "alt": "school logo",
-            "faculty": "Ravenclaw",
-            "spec": "Taming wild beasts",
-            "path": "external or relative",
-            "type": "master",
-            "course": "Alchemy",
-            "desc": "brewing and drinking potions"
-        }
+        "title": "Education"
     },
     "work": {
-        "title": "Work experience",
-        "company": "Company Name",
-        "position": "Position",
-        "path": "logo path",
-        "alt": "company logo",
-        "sDate": "Start Date",
-        "eDate": "End Date",
-        "resps": "Responsibilities",
-        "+resp": "Add Responsibility",
-        "resp": "Responsibility",
-        "place": {
-            "company": "Monster Inc.",
-            "position": "bogeyman",
-            "path": "external or relative",
-            "alt": "company logo",
-            "resp": "hiding under the bed"
-        }
+        "title": "Work experience"
     },
     "skills": {
         "title": "Skills",
@@ -61,39 +22,17 @@
         "title": "Contact",
         "name": "Name",
         "mail": "Email address",
-        "query": "query",
+        "query": "Message",
         "send": "Send",
-        "+social": "Add Social",
-        "site": "Site Name",
-        "class": "Font Awesome Class",
-        "link": "site link",
-        "msgSent": "Thank you for your interest. I will reach back to you as soon as I can"
+        "msgSent": "Thank you for your interest. I will reach back to you as soon as I can",
+        "nameEmpty": "Please let me know your name",
+        "mailEmpty": "Please type in your email address",
+        "mailInvalid": "Invalid email address",
+        "queryEmpty": "Message cannot be empty"
     },
     "footer": {
         "alt": "my photo",
         "text": "Made with my own two hands",
-        "access": "Access",
-        "username": "Username",
-        "password": "Password",
-        "login": "Login",
-        "reg": "Register",
-        "logout": "Logout",
-        "lang": "not your language?",
-        "regtext": "Don't have an account yet? ",
-        "getback": "Back to login panel",
-        "wrongpass": "Wrong password",
-        "usertaken": "Username already taken"
-    },
-    "util": {
-        "save": "Save",
-        "cancel": "Cancel",
-        "edit": "Edit",
-        "delete": "Delete"
-    },
-    "control": {
-        "commit": "Commit",
-        "discard": "Discard",
-        "clone": "Clone",
-        "logout": "Logout"
+        "lang": "not your language?"
     }
 }

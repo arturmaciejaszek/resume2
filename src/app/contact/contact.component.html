@@ -3,7 +3,8 @@
       <h2>{{ 'contact.title' | translate }}</h2>
   </div>
 
-  <h4>{{ 'contact.main' | translate }}</h4>
+  <h4 *ngIf="!msgSent">{{ 'contact.main' | translate }}</h4>
+  <h4 *ngIf="msgSent" class="sent">{{ 'contact.msgSent' | translate }}</h4>
 
   <div class="contact__box mat-elevation-z8">
     <form (ngSubmit)="onSubmit(f)" #f=ngForm fxLayout="column" fxLayoutGap="20px" fxLayoutAlign="center center">
@@ -36,7 +37,7 @@
           <mat-form-field class="area">
             <textarea 
               matInput 
-              placeholder="Textarea"
+              placeholder="{{ 'contact.query' | translate }}"
               ngModel
               required
               name="query"
@@ -46,7 +47,8 @@
           </mat-form-field>
         </div>
       </div>
-      <button type="submit" mat-raised-button color="primary" [disabled]="f.invalid">{{ 'contact.send' | translate }}</button>  
+      <button *ngIf="!showSpinner" type="submit" mat-raised-button color="primary" [disabled]="f.invalid">{{ 'contact.send' | translate }}</button>
+      <mat-spinner *ngIf="showSpinner" diameter="40"></mat-spinner>  
       </form>
   </div>
 
