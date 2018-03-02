@@ -8,18 +8,11 @@ config.js
 /src/data.ts
 
 # assets
-<<<<<<< HEAD
-src/assets/logos
-
-# environments
-src/environments
-=======
 /src/assets/logos
 /src/assets/logosBCKUP
 
 # environments
 /src/environments
->>>>>>> damn
 
 # compiled output
 /dist
