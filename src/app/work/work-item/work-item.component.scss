@@ -25,3 +25,15 @@ mat-panel-description {
     margin: auto;
     text-align: left;
 }
+
+@media screen and (max-width: 599px) {
+    .mobile  {
+        margin-bottom: 1.5rem;
+    }
+    mat-panel-description {
+        padding: 0;
+    }
+    mat-panel-title {
+        text-align: left;
+    }
+}

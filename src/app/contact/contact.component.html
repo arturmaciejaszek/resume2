@@ -8,7 +8,7 @@
 
   <div class="contact__box mat-elevation-z8">
     <form (ngSubmit)="onSubmit(f)" #f=ngForm fxLayout="column" fxLayoutGap="20px" fxLayoutAlign="center center">
-      <div fxLayout="row" fxLayoutAlign="space-around center">
+      <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around center">
         <div fxLayout="column" fxLayoutGap="10px">
           <mat-form-field>
               <input 

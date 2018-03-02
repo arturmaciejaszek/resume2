@@ -24,3 +24,9 @@ mat-card-subtitle {
 .aligner {
     text-align: left;
 }
+
+@media screen and (max-width: 599px) {
+    mat-card-content > span {
+        text-align: right;
+    }
+}
