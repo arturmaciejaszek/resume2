@@ -8,12 +8,12 @@
     <mat-tab-group fxFlex>
         <mat-tab label="{{ 'skills.langs' | translate }}">
           <div class="skills__display" fxLayout="row wrap" fxLayoutAlign="center center">
-            <app-item fxHide.lt-sm="true" 
+            <app-item fxHide.lt-md="true" 
             *ngFor="let item of dataState.langs" 
             [skill]="item" 
             (click)="setItem(item)">
             </app-item>
-            <app-item fxHide.gt-sm="true"
+            <app-item fxHide.gt-md="true" class="ipadPro"
             *ngFor="let item of dataState.langs" 
             [skill]="item" 
             (click)="onMobileTap(item)">
@@ -22,12 +22,12 @@
         </mat-tab>
         <mat-tab label="{{ 'skills.tech' | translate }}">
           <div class="skills__display" fxLayout="row wrap" fxLayoutAlign="center center">
-            <app-item fxHide.lt-sm="true" 
+            <app-item fxHide.lt-md="true" 
             *ngFor="let item of dataState.tech" 
             [skill]="item" 
             (click)="setItem(item)">
             </app-item>
-            <app-item fxHide.gt-sm="true"
+            <app-item fxHide.gt-md="true" class="ipadPro"
             *ngFor="let item of dataState.tech" 
             [skill]="item" 
             (click)="onMobileTap(item)">
@@ -36,12 +36,12 @@
         </mat-tab>
         <mat-tab label="{{ 'skills.soft' | translate }}">
           <div class="skills__display" fxLayout="row wrap" fxLayoutAlign="center center">
-            <app-item fxHide.lt-sm="true" 
+            <app-item fxHide.lt-md="true" 
             *ngFor="let item of dataState.soft" 
             [skill]="item" 
             (click)="setItem(item)">
             </app-item>
-            <app-item fxHide.gt-sm="true"
+            <app-item fxHide.gt-md="true" class="ipadPro"
             *ngFor="let item of dataState.soft" 
             [skill]="item" 
             (click)="onMobileTap(item)">
@@ -49,10 +49,10 @@
           </div>
         </mat-tab>
     </mat-tab-group>
-    <mat-divider fxHide.lt-sm="true" [vertical]="true"></mat-divider>
+    <mat-divider fxHide.lt-md="true" [vertical]="true"></mat-divider>
 
     <!-- DETAILS -->
-    <div fxFlex="30%" fxLayout="column" fxLayoutAlign="center center" fxHide.lt-sm="true">
+    <div fxFlex="30%" fxLayout="column" fxLayoutAlign="center center" fxHide.lt-md="true">
         <app-details [selectedSkill]="selectedSkill" [stars]="stars"></app-details>
     </div>
   </div>

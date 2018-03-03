@@ -11,6 +11,12 @@
     }
 }
 
+@media screen and (min-height: 1081px) {
+    .header {
+        height: 8vh;
+    }
+}
+
 @media screen and (max-width: 415px)  {
     .header {
         height: 15rem;
