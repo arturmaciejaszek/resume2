@@ -15,6 +15,7 @@
                 matInput 
                 placeholder="{{ 'contact.name' | translate }}"
                 ngModel
+                autocomplete="name"
                 required
                 name="name"
                 #nameInput="ngModel">
@@ -25,6 +26,7 @@
                 matInput 
                 placeholder="{{ 'contact.mail' | translate }}"
                 ngModel
+                autocomplete="email"
                 [pattern]="pat"
                 required
                 name="email"

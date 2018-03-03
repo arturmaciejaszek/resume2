@@ -14,7 +14,7 @@ export class WorkComponent implements OnInit, OnDestroy {
   constructor(private data: DataService) { }
 
   ngOnInit() {
-    this.data.dataSubject
+    this.dataSub = this.data.dataSubject
       .map( res => res.work)
       .subscribe(res => {
         this.dataState = res;

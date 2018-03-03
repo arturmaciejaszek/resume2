@@ -1,0 +1,158 @@
+[debug] [2018-03-03T23:13:21.727Z] ----------------------------------------------------------------------
+[debug] [2018-03-03T23:13:21.733Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Artur Maciejaszek\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-03T23:13:21.734Z] CLI Version:   3.17.4
+[debug] [2018-03-03T23:13:21.734Z] Platform:      win32
+[debug] [2018-03-03T23:13:21.734Z] Node Version:  v6.11.2
+[debug] [2018-03-03T23:13:21.735Z] Time:          Sun Mar 04 2018 00:13:21 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-03T23:13:21.735Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-03T23:13:21.801Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-03T23:13:21.802Z] > authorizing via signed-in user
+[debug] [2018-03-03T23:13:21.813Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/resume2-amaciejaszek  
+  
+ Sun Mar 04 2018 00:13:21 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-03T23:13:22.648Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-03T23:13:22.650Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/resume2-amaciejaszek/tokens  
+  
+ Sun Mar 04 2018 00:13:22 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-03T23:13:23.428Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'H:\FullStack\Code\resume2'...
+[info] 
+[debug] [2018-03-03T23:13:23.433Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/resume2-amaciejaszek  
+  
+ Sun Mar 04 2018 00:13:23 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-03T23:13:24.327Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-03T23:13:24.327Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/782144207045/clients/_:getWebAppConfig  
+  
+ Sun Mar 04 2018 00:13:24 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-03T23:13:25.172Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: dist
+[info] +  hosting: Local server: http://localhost:5000
+
+[info] [hosting] Rewriting / to live function trigger
+[debug] [2018-03-03T23:18:15.271Z] ----------------------------------------------------------------------
+[debug] [2018-03-03T23:18:15.274Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Artur Maciejaszek\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-03T23:18:15.275Z] CLI Version:   3.17.4
+[debug] [2018-03-03T23:18:15.275Z] Platform:      win32
+[debug] [2018-03-03T23:18:15.275Z] Node Version:  v6.11.2
+[debug] [2018-03-03T23:18:15.276Z] Time:          Sun Mar 04 2018 00:18:15 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-03T23:18:15.276Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-03T23:18:15.295Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-03T23:18:15.297Z] > authorizing via signed-in user
+[debug] [2018-03-03T23:18:15.300Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/resume2-amaciejaszek  
+  
+ Sun Mar 04 2018 00:18:15 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-03T23:18:16.113Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-03T23:18:16.115Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/resume2-amaciejaszek/tokens  
+  
+ Sun Mar 04 2018 00:18:16 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-03T23:18:16.695Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'H:\FullStack\Code\resume2'...
+[info] 
+[debug] [2018-03-03T23:18:16.703Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/resume2-amaciejaszek  
+  
+ Sun Mar 04 2018 00:18:16 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-03T23:18:17.607Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-03T23:18:17.608Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/782144207045/clients/_:getWebAppConfig  
+  
+ Sun Mar 04 2018 00:18:17 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-03T23:18:18.355Z] <<< HTTP RESPONSE 200
+[warn] !  hosting: Port 5000 is not available. Trying another port...
+[debug] [2018-03-03T23:18:18.413Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/resume2-amaciejaszek  
+  
+ Sun Mar 04 2018 00:18:18 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-03T23:18:19.185Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-03T23:18:19.185Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/782144207045/clients/_:getWebAppConfig  
+  
+ Sun Mar 04 2018 00:18:19 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-03T23:18:19.685Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: dist
+[info] +  hosting: Local server: http://localhost:5004
+
+[info] Shutting down...
+[debug] [2018-03-03T23:18:37.884Z] ----------------------------------------------------------------------
+[debug] [2018-03-03T23:18:37.887Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Artur Maciejaszek\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-03T23:18:37.887Z] CLI Version:   3.17.4
+[debug] [2018-03-03T23:18:37.888Z] Platform:      win32
+[debug] [2018-03-03T23:18:37.888Z] Node Version:  v6.11.2
+[debug] [2018-03-03T23:18:37.888Z] Time:          Sun Mar 04 2018 00:18:37 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-03T23:18:37.888Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-03T23:18:37.907Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-03T23:18:37.908Z] > authorizing via signed-in user
+[debug] [2018-03-03T23:18:37.914Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/resume2-amaciejaszek  
+  
+ Sun Mar 04 2018 00:18:37 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-03T23:18:38.690Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-03T23:18:38.692Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/resume2-amaciejaszek/tokens  
+  
+ Sun Mar 04 2018 00:18:38 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-03T23:18:39.680Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'H:\FullStack\Code\resume2'...
+[info] 
+[debug] [2018-03-03T23:18:39.689Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/resume2-amaciejaszek  
+  
+ Sun Mar 04 2018 00:18:39 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-03T23:18:40.503Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-03T23:18:40.504Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/782144207045/clients/_:getWebAppConfig  
+  
+ Sun Mar 04 2018 00:18:40 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-03T23:18:41.150Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: dist
+[info] +  hosting: Local server: http://localhost:5000
+
+[info] [hosting] Rewriting / to live function trigger
+[info] Shutting down...
+[debug] [2018-03-03T23:19:41.234Z] ----------------------------------------------------------------------
+[debug] [2018-03-03T23:19:41.237Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Artur Maciejaszek\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve --only functions,hosting
+[debug] [2018-03-03T23:19:41.238Z] CLI Version:   3.17.4
+[debug] [2018-03-03T23:19:41.238Z] Platform:      win32
+[debug] [2018-03-03T23:19:41.238Z] Node Version:  v6.11.2
+[debug] [2018-03-03T23:19:41.238Z] Time:          Sun Mar 04 2018 00:19:41 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-03T23:19:41.239Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-03T23:19:41.259Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-03T23:19:41.262Z] > authorizing via signed-in user
+[debug] [2018-03-03T23:19:41.270Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/resume2-amaciejaszek  
+  
+ Sun Mar 04 2018 00:19:41 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-03T23:19:42.020Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-03T23:19:42.022Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/resume2-amaciejaszek/tokens  
+  
+ Sun Mar 04 2018 00:19:42 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-03T23:19:42.684Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'H:\FullStack\Code\resume2'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-03-03T23:19:43.567Z] Fetching environment
+[debug] [2018-03-03T23:19:43.570Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/resume2-amaciejaszek  
+  
+ Sun Mar 04 2018 00:19:43 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-03T23:19:43.570Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/resume2-amaciejaszek/apiKeys  
+  
+ Sun Mar 04 2018 00:19:43 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-03T23:19:43.570Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/resume2-amaciejaszek  
+  
+ Sun Mar 04 2018 00:19:43 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-03T23:19:44.386Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-03T23:19:44.387Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/782144207045/clients/_:getWebAppConfig  
+  
+ Sun Mar 04 2018 00:19:44 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-03T23:19:44.441Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-03T23:19:44.731Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-03T23:19:44.732Z] Starting @google-cloud/functions-emulator
+[debug] [2018-03-03T23:19:44.862Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: dist
+[info] +  hosting: Local server: http://localhost:5000
+
+[debug] [2018-03-03T23:19:47.354Z] Parsing function triggers
+[info] [hosting] Rewriting / to local function trigger
+[info] +  functions: sendEmail: http://localhost:5001/resume2-amaciejaszek/us-central1/sendEmail
+[info] +  functions: trigger: http://localhost:5001/resume2-amaciejaszek/us-central1/trigger
+[info] [hosting] Rewriting / to local function trigger
+[info] Shutting down...

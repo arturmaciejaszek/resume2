@@ -3,6 +3,7 @@
 # Firebase functions
 /functions/node_modules
 config.js
+/functions/dist-server
 
 # data
 /src/data.ts

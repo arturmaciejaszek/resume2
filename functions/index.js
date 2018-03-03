@@ -4,6 +4,18 @@ const functions = require('firebase-functions');
 const nodemailer = require('nodemailer');
 const config = require('./config');
 const cors = require('cors')({origin: true});
+const express = require('express');
+
+const angularUniversal = require('angular-universal-express-firebase');
+
+exports.trigger = angularUniversal.trigger({
+    index: __dirname + '/index.html',
+    main: __dirname + '/dist-server/main.bundle',
+    enableProdMode: true,
+    cdnCacheExpiry: 1200,
+    browserCacheExpiry: 600,
+    staleWhileRevalidate: 120
+});
 
 const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',

@@ -1,6 +1,6 @@
-import { DataService } from './shared/data.service';
+import { UniversalTranslateLoader } from '@ngx-universal/translate-loader';
+import { NgModule, Inject, PLATFORM_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
 import { HttpClientModule, HttpClient} from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
@@ -15,6 +15,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppComponent } from './app.component';
 import { environment } from './../environments/environment';
 
+import { DataService } from './shared/data.service';
 import { ResumeComponent } from './resume/resume.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ContactComponent } from './contact/contact.component';
@@ -36,7 +37,7 @@ const appRoutes: Routes = [
     ContactComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'resumeUniversal'}),
     SharedModule,
     FormsModule,
     SkillsModule,
@@ -50,9 +51,12 @@ const appRoutes: Routes = [
     HttpModule,
     TranslateModule.forRoot({
       loader: {
-          provide: TranslateLoader,
-          useFactory: HttpLoaderFactory,
-          deps: [HttpClient]
+        provide: TranslateLoader,
+        useFactory: translateFactory,
+        deps: [
+          PLATFORM_ID,
+          HttpClient
+        ]
       }
     })
   ],
@@ -60,8 +64,13 @@ const appRoutes: Routes = [
   bootstrap: [AppComponent]
 
 })
-export class AppModule { }
+export class AppModule {
+  constructor(@Inject(PLATFORM_ID) private readonly platformId: any) {
+  }
+ }
 
-export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http);
+export function translateFactory(platformId: any, http: HttpClient): TranslateLoader {
+  const browserLoader = new TranslateHttpLoader(http);
+
+  return new UniversalTranslateLoader(platformId, browserLoader, 'dist-server/assets/i18n');
 }

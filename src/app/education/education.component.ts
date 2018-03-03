@@ -15,7 +15,7 @@ export class EducationComponent implements OnInit, OnDestroy {
   constructor(private data: DataService) { }
 
   ngOnInit() {
-    this.data.dataSubject
+    this.dataSub = this.data.dataSubject
       .map( res => res.education)
       .subscribe(res => {
         this.dataState = res;
