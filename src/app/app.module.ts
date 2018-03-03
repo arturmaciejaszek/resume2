@@ -12,24 +12,16 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { TranslateModule, TranslateLoader, TranslateService} from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-import { SharedModule } from './shared/shared.module';
-
+import { AppComponent } from './app.component';
 import { environment } from './../environments/environment';
 
-import { AppComponent } from './app.component';
 import { ResumeComponent } from './resume/resume.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { SkillsComponent } from './skills/skills.component';
-import { EducationComponent } from './education/education.component';
-import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
-import { ItemComponent } from './skills/item/item.component';
-import { WorkItemComponent } from './work/work-item/work-item.component';
-import { EduItemComponent } from './education/edu-item/edu-item.component';
-import { SortbyPipe } from './shared/sortby.pipe';
-import { DetailsComponent } from './skills/details/details.component';
-import { DialogComponent } from './skills/dialog/dialog.component';
-
+import { SharedModule } from './shared/shared.module';
+import { SkillsModule } from './skills/skills.module';
+import { EducationModule } from './education/education.module';
+import { WorkModule } from './work/work.module';
 
 const appRoutes: Routes = [
   {path: '', component: ResumeComponent, pathMatch: 'full'},
@@ -41,21 +33,15 @@ const appRoutes: Routes = [
     AppComponent,
     ResumeComponent,
     WelcomeComponent,
-    SkillsComponent,
-    EducationComponent,
-    WorkComponent,
     ContactComponent,
-    ItemComponent,
-    WorkItemComponent,
-    EduItemComponent,
-    SortbyPipe,
-    DetailsComponent,
-    DialogComponent
   ],
   imports: [
     BrowserModule,
     SharedModule,
     FormsModule,
+    SkillsModule,
+    EducationModule,
+    WorkModule,
     BrowserAnimationsModule,
     AngularFireModule.initializeApp(environment.fireConfig),
     AngularFirestoreModule,
@@ -71,8 +57,8 @@ const appRoutes: Routes = [
     })
   ],
   providers: [TranslateService, DataService],
-  bootstrap: [AppComponent],
-  entryComponents: [DialogComponent]
+  bootstrap: [AppComponent]
+
 })
 export class AppModule { }
 
