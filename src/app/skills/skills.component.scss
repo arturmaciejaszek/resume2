@@ -1,5 +1,5 @@
 .skills {
-    // min-height: 70vh;
+
 
     &__container {
         min-height: 70vh;
@@ -13,23 +13,18 @@
     }
 }
 
-mat-card {
-    height: 40vh;
-    width: 15vw;
-    max-width: 200px;
-    max-height: 300px;
-}
 
 mat-tab-group {
     margin-top: 3rem;
 }
 
-// .star {
-//     color: yellow;
-//     transform: scale(1.1);
-// }
-
-// .half {
-//     color: yellow;
-//     transform: scale(1.1);
-// }
+@media screen and (max-width: 599px) {
+    .skills{
+        &__container {
+            max-height: none;
+        }
+    }
+    mat-tab-group {
+        width: 100%;
+    }
+}

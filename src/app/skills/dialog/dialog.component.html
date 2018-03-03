@@ -1,0 +1,15 @@
+<mat-card>
+  <div fxLayout="column" fxLayoutAlign="space-between">
+    <div>
+      <mat-card-title>{{ data.skill.name }}</mat-card-title>
+      <!-- <mat-card-subtitle>{{ selectedSkill.group }}</mat-card-subtitle> -->
+      <mat-card-content>{{ data.skill.details }}</mat-card-content>
+    </div>
+    <mat-card-footer fxLayout="space-between" fxLayoutAlign="center center">
+      <mat-icon class="star" *ngFor="let full of data.stars.full">star</mat-icon>
+      <mat-icon class="half" *ngFor="let half of data.stars.half">star_half</mat-icon>
+      <mat-icon class="empty" *ngFor="let empty of data.stars.empty">star_border</mat-icon>
+    </mat-card-footer>
+  </div>
+</mat-card>
+<button mat-button [mat-dialog-close]="true">{{ 'skills.close' | translate }}</button>

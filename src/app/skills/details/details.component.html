@@ -1,0 +1,14 @@
+<mat-card class="mat-elevation-z8">
+  <div fxLayout="column" fxLayoutAlign="space-between">
+    <div>
+      <mat-card-title>{{ selectedSkill.name }}</mat-card-title>
+      <!-- <mat-card-subtitle>{{ selectedSkill.group }}</mat-card-subtitle> -->
+      <mat-card-content>{{ selectedSkill.details }}</mat-card-content>
+    </div>
+    <mat-card-footer fxLayout="space-between" fxLayoutAlign="center center">
+      <mat-icon class="star" *ngFor="let full of stars.full">star</mat-icon>
+      <mat-icon class="half" *ngFor="let half of stars.half">star_half</mat-icon>
+      <mat-icon class="empty" *ngFor="let empty of stars.empty">star_border</mat-icon>
+    </mat-card-footer>
+  </div>
+</mat-card>

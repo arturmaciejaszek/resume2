@@ -1,0 +1,15 @@
+mat-card {
+    height: 40vh;
+    width: 15vw;
+    max-width: 200px;
+    max-height: 300px;
+
+    & > div {
+        height: 40vh;
+    }
+
+}
+
+mat-card-footer {
+    margin-bottom: 2rem;
+}

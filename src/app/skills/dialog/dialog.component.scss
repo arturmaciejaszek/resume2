@@ -1,0 +1,15 @@
+mat-card {
+    height: 70%;
+
+    & > div {
+        height: 100%;
+    }
+}
+
+button {
+    margin-top: 2rem;
+}
+
+mat-card-footer {
+    margin-bottom: 2rem;
+}

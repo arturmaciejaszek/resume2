@@ -12,8 +12,8 @@
       <span>{{ work.startDate | date:'MM.yyyy' }} - {{ work.endDate | date:'MM.yyyy' }}</span>
     </mat-panel-description>
   </mat-expansion-panel-header>
-  <mat-panel-description fxLayout="column" fxLayoutAlign="center center" fxHide.lt-sm="false" class="mobile">
-    <span>{{ work.position }} </span>
+  <mat-panel-description fxLayout="column" fxLayoutAlign="center center" fxHide.gt-sm="true" class="mobile">
+    <span>{{ work.position }}</span>
     <span>{{ work.startDate | date:'MM.yyyy' }} - {{ work.endDate | date:'MM.yyyy' }}</span>
   </mat-panel-description>
   <ul class="responsibilities">

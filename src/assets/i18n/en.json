@@ -15,7 +15,10 @@
         "tech": "Technologies",
         "langs": "Languages",
         "soft": "Software",
-        "misc": "Misc."
+        "misc": "Misc.",
+        "close": "Close",
+        "sName": "Skill name",
+        "sDesc": "Click any skill in the panel to see the details. \nPlease note that most of the listed skills are self-taught, hence the score below may be on the shy side."
     },
     "contact": {
         "main": "If you are interested you can reach me via the form below or social links",

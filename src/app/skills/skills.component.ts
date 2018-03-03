@@ -1,10 +1,12 @@
 import { Component, OnInit, Input, OnDestroy } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { Observable } from 'rxjs/Observable';
+import { Subscription } from 'rxjs/Subscription';
+import { MatDialog } from '@angular/material';
 
 import { DataService } from './../shared/data.service';
 import { Skill } from './../models/skill.model';
-import { Subscription } from 'rxjs/Subscription';
-
+import { DialogComponent } from './dialog/dialog.component';
 
 @Component({
   selector: 'app-skills',
@@ -13,31 +15,45 @@ import { Subscription } from 'rxjs/Subscription';
 })
 export class SkillsComponent implements OnInit, OnDestroy {
   dataSub: Subscription;
-  // skillGroup: string[] = [];
+  transSub: Subscription;
   dataState: any = {};
   selectedSkill: Skill = {
-    name: 'Skill Name',
-    group: 'language',
-    details: 'Details about selected skill. Lorem ipsum dolor sit amet consectetur adipisicing elit.'
-    + ' Quas, corrupti! Laudantium, omnis in. Nihil fugit ex ipsum. Eos asperiores officiis inventore beatae'
-    + ' eligendi quisquam mollitia dolor, velit, tempora, soluta harum!',
+    name: null,
+    details: null,
     prof: null
   };
   stars = {full: [], half: [], empty: []};
 
-  constructor(private data: DataService) { }
+  constructor(private data: DataService, private translate: TranslateService, private dialog: MatDialog) { }
 
   ngOnInit() {
+    this.transSub = this.translate.get('skills').subscribe(res => {
+      this.selectedSkill.name = res.sName;
+      this.selectedSkill.details = res.sDesc;
+    });
     this.data.dataSubject
       .map( res => res.skills)
       .subscribe(res => {
         this.dataState = res;
-        // this.skillGroup = Object.keys(this.dataState);
     } );
+  }
+
+  onMobileTap(item: Skill) {
+    this.setItem(item);
+    this.dialog.open(DialogComponent, {
+      data: {
+        skill: this.selectedSkill,
+        stars: this.stars
+      },
+      height: '80vh',
+      width: '80vw',
+      maxHeight: '450px'
+  });
   }
 
   ngOnDestroy() {
     this.dataSub.unsubscribe();
+    this.transSub.unsubscribe();
   }
 
   setItem(skill: Skill) {
@@ -62,8 +78,5 @@ export class SkillsComponent implements OnInit, OnDestroy {
     }
   }
 
-  check() {
-    console.log('1');
-  }
 
 }

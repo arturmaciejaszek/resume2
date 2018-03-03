@@ -27,6 +27,8 @@ import { ItemComponent } from './skills/item/item.component';
 import { WorkItemComponent } from './work/work-item/work-item.component';
 import { EduItemComponent } from './education/edu-item/edu-item.component';
 import { SortbyPipe } from './shared/sortby.pipe';
+import { DetailsComponent } from './skills/details/details.component';
+import { DialogComponent } from './skills/dialog/dialog.component';
 
 
 const appRoutes: Routes = [
@@ -47,6 +49,8 @@ const appRoutes: Routes = [
     WorkItemComponent,
     EduItemComponent,
     SortbyPipe,
+    DetailsComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -67,7 +71,8 @@ const appRoutes: Routes = [
     })
   ],
   providers: [TranslateService, DataService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [DialogComponent]
 })
 export class AppModule { }
 
