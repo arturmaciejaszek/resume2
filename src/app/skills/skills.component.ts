@@ -1,6 +1,8 @@
 import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/operator/take';
+import 'rxjs/add/operator/do';
 import { Subscription } from 'rxjs/Subscription';
 import { MatDialog } from '@angular/material';
 
@@ -15,7 +17,6 @@ import { DialogComponent } from './dialog/dialog.component';
 })
 export class SkillsComponent implements OnInit, OnDestroy {
   dataSub: Subscription;
-  transSub: Subscription;
   showSpinner = true;
   dataState: any = {};
   selectedSkill: Skill = {
@@ -28,11 +29,12 @@ export class SkillsComponent implements OnInit, OnDestroy {
   constructor(private data: DataService, private translate: TranslateService, private dialog: MatDialog) { }
 
   ngOnInit() {
-    this.transSub = this.translate.get('skills').subscribe(res => {
-      this.selectedSkill.name = res.sName;
-      this.selectedSkill.details = res.sDesc;
-    });
     this.dataSub = this.data.dataSubject
+      .do( () => this.translate.get('skills').take(1).subscribe( t => {
+        this.selectedSkill.name = t.sName;
+        this.selectedSkill.details = t.sDesc;
+        this.stars =  {full: [], half: [], empty: []};
+      }))
       .subscribe(res => {
         this.dataState = res.skills;
         this.showSpinner = false;
@@ -54,7 +56,6 @@ export class SkillsComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.dataSub.unsubscribe();
-    // this.transSub.unsubscribe();
   }
 
   setItem(skill: Skill) {

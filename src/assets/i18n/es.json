@@ -1,8 +1,7 @@
 {
     "home": {
         "title": "Bienvenido",
-        "greeting": "Foremost I would like to thank you for visiting my site, which is in fact my résumé. \nI am a graduate of IT related studies (class '13), I have a master in Management ('15) and in November '17 I decided to change my occupation by picking up programming, with front-end or full-stack in mind, the result of which you can see on this site.\n\tI live in Poznań, Poland and I am currently looking for a job in the Industry, where I will be able to improve my skills and get aided in my programming endeavors. I am highly communicative. Most of my life I worked with people by supporting marketing events and fair exhibitions. Finishing Business Communication, IT and Econometry studies made me a mix of different worlds. If you are looking for a person, who in a long run, can be a bridge between departments or who can fit in diverse roles I might be the one for the job.\n\n\tIf you would like to contact me or leave some feedback you can use the contact form.\nI will highly appreciate that.\n\nAlso I wish you a marvelous day :)\n\nBest regards\n",
-        "greeting": "company. En primer lugar me gustaría agradecerlo por visitar esta página web que es de realidad mi curriculum vitae. \nSoy un graduado de estudios de IT (clase '13), Tengo un máster en Administración ('15) y en noviembre '17 decidí a cambiar mi ocupación por aprender web programación, desarrollo web para ser precioso, qué resultados puede ver aquí.\n\tVivo en Poznań, Polonia y actualmente estoy buscando trabajo en la industria, que dejame mejorar mis habilidades y dónde podré aprender mucho más. Soy muy comunicativo. La mayoría de mi vida trabajé con pueblo, apoyando eventos de marketing y ferias. Los estudios de Comunicacion de negocios, Informática y Econometría me permite a ver problemas desde vistas diferentes. Si buscan un person que puede gestionar tareas diferentes, yo quizá ser el hombre por ese puesto. \n\n\tSi desea contactarme o dejar algún comentario, puede usar el formulario de contacto.\nLe agradecería mucho.\n\nQue tengan un día maravilloso :)\n\nAtentamente\n",
+        "greeting": "En primer lugar me gustaría agradecerlo por visitar esta página web que es de realidad mi curriculum vitae. \nSoy un graduado de estudios de IT (clase '13), Tengo un máster en Administración ('15) y en noviembre '17 decidí a cambiar mi ocupación por aprender web programación, desarrollo web para ser precioso, qué resultados puede ver aquí.\n\tVivo en Poznań, Polonia y actualmente estoy buscando trabajo en la industria, que dejame mejorar mis habilidades y dónde podré aprender mucho más. Soy muy comunicativo. La mayoría de mi vida trabajé con pueblo, apoyando eventos de marketing y ferias. Los estudios de Comunicacion de negocios, Informática y Econometría me permite a ver problemas desde vistas diferentes. Si busca un person que puede gestionar tareas diferentes, yo quizá ser el hombre por ese puesto. \n\n\tSi desea contactarme o dejar algún comentario, puede usar el formulario de contacto.\nLe agradecería mucho.\n\nQue tenga un día maravilloso :)\n\nAtentamente\n",
         "alt": "mi foto"
     },
     "edu": {
@@ -22,7 +21,7 @@
         "sDesc": "Haga clic en cualquier habilidad para ver los detalles. \nLa mayoría de estas habilidades son autodidactos así que las notas no quizá estar precisos."
     },
     "contact": {
-        "main": "Si estás interesado, puede contactarme con formulario abajo o los enlaces sociales",
+        "main": "Si está interesado, puede contactarme con formulario abajo o los enlaces sociales",
         "title": "Contacto",
         "name": "Nombre",
         "mail": "Correro electronico",
@@ -41,6 +40,6 @@
     },
     "meta": {
         "metaContent": "Me llamo Artur Maciejaszek y eso es mi curriculum vitae. Vivo en Poznań, Polonia y actual estoy buscando un trabajo como junior desarrollador web. Me gustaría trabajar con Angular 5 pero mejoro mis habilidades y aprendo más tecnologías cada día",
-        "metaDescription": "Bienvenido \nMe llamo Artur Maciejaszek y estoy buscando un trabajo en IT idustria. Por favor comprobar esta página web si buscan junior desarrollador web"
+        "metaDescription": "Bienvenido \nMe llamo Artur Maciejaszek y estoy buscando un trabajo en IT idustria. Por favor comproba esta página web si busca junior desarrollador web"
     }
 }
