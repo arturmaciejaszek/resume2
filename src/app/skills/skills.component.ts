@@ -16,6 +16,7 @@ import { DialogComponent } from './dialog/dialog.component';
 export class SkillsComponent implements OnInit, OnDestroy {
   dataSub: Subscription;
   transSub: Subscription;
+  showSpinner = true;
   dataState: any = {};
   selectedSkill: Skill = {
     name: null,
@@ -34,6 +35,7 @@ export class SkillsComponent implements OnInit, OnDestroy {
     this.dataSub = this.data.dataSubject
       .subscribe(res => {
         this.dataState = res.skills;
+        this.showSpinner = false;
     } );
   }
 

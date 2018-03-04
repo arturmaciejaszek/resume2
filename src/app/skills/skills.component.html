@@ -6,8 +6,9 @@
     
     <!-- CONTROL -->
     <mat-tab-group fxFlex>
-        <mat-tab label="{{ 'skills.langs' | translate }}">
-          <div class="skills__display" fxLayout="row wrap" fxLayoutAlign="center center">
+      <mat-tab label="{{ 'skills.langs' | translate }}">
+        <div class="skills__display" fxLayout="row wrap" fxLayoutAlign="center center">
+            <mat-spinner *ngIf="showSpinner" diameter="40"></mat-spinner>
             <app-item fxHide.lt-md="true" 
             *ngFor="let item of dataState.langs" 
             [skill]="item" 
@@ -22,6 +23,7 @@
         </mat-tab>
         <mat-tab label="{{ 'skills.tech' | translate }}">
           <div class="skills__display" fxLayout="row wrap" fxLayoutAlign="center center">
+            <mat-spinner *ngIf="showSpinner" diameter="40"></mat-spinner>
             <app-item fxHide.lt-md="true" 
             *ngFor="let item of dataState.tech" 
             [skill]="item" 
@@ -36,6 +38,7 @@
         </mat-tab>
         <mat-tab label="{{ 'skills.soft' | translate }}">
           <div class="skills__display" fxLayout="row wrap" fxLayoutAlign="center center">
+            <mat-spinner *ngIf="showSpinner" diameter="40"></mat-spinner>
             <app-item fxHide.lt-md="true" 
             *ngFor="let item of dataState.soft" 
             [skill]="item" 

@@ -1,3 +1,4 @@
+import { environment } from './../environments/environment';
 import { UniversalTranslateLoader } from '@ngx-universal/translate-loader';
 import { NgModule, Inject, PLATFORM_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -7,6 +8,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { TranslateModule, TranslateLoader, TranslateService} from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
@@ -34,6 +37,8 @@ const appRoutes: Routes = [
     ContactComponent,
   ],
   imports: [
+    AngularFireModule.initializeApp(environment.fireConfig),
+    AngularFirestoreModule,
     SharedModule,
     BrowserModule.withServerTransition({ appId: 'resumeUniversal'}),
     RouterModule.forRoot(appRoutes),

@@ -11,6 +11,7 @@ import { DataService } from './../shared/data.service';
 export class EducationComponent implements OnInit, OnDestroy {
   dataSub: Subscription;
   dataState: any = [];
+  showSpinner = true;
 
   constructor(private data: DataService) { }
 
@@ -18,6 +19,7 @@ export class EducationComponent implements OnInit, OnDestroy {
     this.dataSub = this.data.dataSubject
       .subscribe(res => {
         this.dataState = res.education;
+        this.showSpinner = false;
     } );
   }
 

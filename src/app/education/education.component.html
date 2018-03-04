@@ -2,6 +2,7 @@
     <div class="section__title">
         <h2>{{ 'edu.title' | translate }}</h2>
     </div>
+    <mat-spinner *ngIf="showSpinner" diameter="40"></mat-spinner>
     <div class="edu__items">
       <app-edu-item *ngFor="let edu of dataState |sortby:'endDate':'date'" [edu]="edu"></app-edu-item>
     </div>
