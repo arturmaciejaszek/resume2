@@ -9,7 +9,6 @@ config.js
 /src/data.ts
 
 # assets
-/src/assets/logos
 /src/assets/logosBCKUP
 
 # environments

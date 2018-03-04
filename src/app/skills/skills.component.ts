@@ -53,7 +53,7 @@ export class SkillsComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.dataSub.unsubscribe();
-    this.transSub.unsubscribe();
+    // this.transSub.unsubscribe();
   }
 
   setItem(skill: Skill) {

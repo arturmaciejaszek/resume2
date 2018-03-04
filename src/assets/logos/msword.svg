@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="38.816059mm"
+   height="37.923611mm"
+   viewBox="0 0 38.816059 37.923611"
+   version="1.1"
+   id="svg3899"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="msword.svg">
+  <defs
+     id="defs3893">
+    <clipPath
+       id="clipPath3917"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3915"
+         d="M 0,595.275 H 841.89 V 0 H 0 Z" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="65.094534"
+     inkscape:cy="90.061675"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3896">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-0.03841305,-0.02328079)">
+    <g
+       transform="matrix(0.35277777,0,0,-0.35277777,-129.05367,123.98505)"
+       inkscape:label="microsoft-word-2013-seeklogo.com"
+       id="g3909">
+      <g
+         id="g3911">
+        <g
+           clip-path="url(#clipPath3917)"
+           id="g3913">
+          <g
+             transform="translate(423.4351,351.3877)"
+             id="g3919">
+            <path
+               inkscape:connector-curvature="0"
+               id="path3921"
+               style="fill:#2a5699;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 0,0 h 7.475 v -10 c 13.375,-0.075 26.738,0.138 40.101,-0.075 2.85,0.288 5.087,-1.925 4.824,-4.775 0.213,-24.625 -0.05,-49.261 0.125,-73.886 -0.125,-2.526 0.25,-5.327 -1.212,-7.563 -1.825,-1.301 -4.188,-1.139 -6.312,-1.237 -12.514,0.061 -25.014,0.036 -37.526,0.036 v -10 h -7.812 c -19.024,3.475 -38.101,6.662 -57.162,10 -0.013,29.162 0,58.325 0,87.475 C -38.338,-6.675 -19.162,-3.413 0,0" />
+          </g>
+          <g
+             transform="translate(430.9097,337.6377)"
+             id="g3923">
+            <path
+               inkscape:connector-curvature="0"
+               id="path3925"
+               style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="M 0,0 H 41.25 V -80 H 0 v 10 h 32.5 v 5 H 0 v 6.25 h 32.5 v 5 H 0 v 6.25 h 32.5 v 5 H 0 v 6.25 h 32.5 v 5 H 0 V -25 h 32.5 v 5 H 0 v 6.25 h 32.5 v 5 H 0 Z" />
+          </g>
+          <g
+             transform="translate(391.7603,315.5508)"
+             id="g3927">
+            <path
+               inkscape:connector-curvature="0"
+               id="path3929"
+               style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               d="m 0,0 c 2.375,0.137 4.75,0.237 7.125,0.362 1.662,-8.438 3.361,-16.862 5.162,-25.261 1.412,8.674 2.976,17.324 4.486,25.986 2.5,0.087 5,0.225 7.489,0.375 -2.825,-12.112 -5.301,-24.325 -8.388,-36.361 -2.089,-1.089 -5.214,0.048 -7.688,-0.125 -1.664,8.273 -3.601,16.5 -5.088,24.811 -1.462,-8.075 -3.363,-16.075 -5.037,-24.1 -2.401,0.125 -4.812,0.274 -7.226,0.437 -2.074,11 -4.513,21.925 -6.449,32.95 2.136,0.1 4.287,0.188 6.425,0.263 1.287,-7.962 2.75,-15.888 3.875,-23.861 C -3.55,-16.351 -1.75,-8.176 0,0" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

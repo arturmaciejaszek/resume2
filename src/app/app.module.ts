@@ -37,18 +37,14 @@ const appRoutes: Routes = [
     ContactComponent,
   ],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'resumeUniversal'}),
-    SharedModule,
-    FormsModule,
-    SkillsModule,
-    EducationModule,
-    WorkModule,
-    BrowserAnimationsModule,
-    AngularFireModule.initializeApp(environment.fireConfig),
     AngularFirestoreModule,
+    AngularFireModule.initializeApp(environment.fireConfig),
+    SharedModule,
+    BrowserModule.withServerTransition({ appId: 'resumeUniversal'}),
     RouterModule.forRoot(appRoutes),
     HttpClientModule,
     HttpModule,
+    BrowserAnimationsModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -58,7 +54,11 @@ const appRoutes: Routes = [
           HttpClient
         ]
       }
-    })
+    }),
+    FormsModule,
+    SkillsModule,
+    EducationModule,
+    WorkModule
   ],
   providers: [TranslateService, DataService],
   bootstrap: [AppComponent]
