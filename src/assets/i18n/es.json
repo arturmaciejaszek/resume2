@@ -1,111 +1,46 @@
 {
     "home": {
         "title": "Bienvenido",
-        "name": "Nombre",
-        "greeting": "Saludo",
+        "greeting": "Foremost I would like to thank you for visiting my site, which is in fact my résumé. \nI am a graduate of IT related studies (class '13), I have a master in Management ('15) and in November '17 I decided to change my occupation by picking up programming, with front-end or full-stack in mind, the result of which you can see on this site.\n\tI live in Poznań, Poland and I am currently looking for a job in the Industry, where I will be able to improve my skills and get aided in my programming endeavors. I am highly communicative. Most of my life I worked with people by supporting marketing events and fair exhibitions. Finishing Business Communication, IT and Econometry studies made me a mix of different worlds. If you are looking for a person, who in a long run, can be a bridge between departments or who can fit in diverse roles I might be the one for the job.\n\n\tIf you would like to contact me or leave some feedback you can use the contact form.\nI will highly appreciate that.\n\nAlso I wish you a marvelous day :)\n\nBest regards\n",
+        "greeting": "company. En primer lugar me gustaría agradecerlo por visitar esta página web que es de realidad mi curriculum vitae. \nSoy un graduado de estudios de IT (clase '13), Tengo un máster en Administración ('15) y en noviembre '17 decidí a cambiar mi ocupación por aprender web programación, desarrollo web para ser precioso, qué resultados puede ver aquí.\n\tVivo en Poznań, Polonia y actualmente estoy buscando trabajo en la industria, que dejame mejorar mis habilidades y dónde podré aprender mucho más. Soy muy comunicativo. La mayoría de mi vida trabajé con pueblo, apoyando eventos de marketing y ferias. Los estudios de Comunicacion de negocios, Informática y Econometría me permite a ver problemas desde vistas diferentes. Si buscan un person que puede gestionar tareas diferentes, yo quizá ser el hombre por ese puesto. \n\n\tSi desea contactarme o dejar algún comentario, puede usar el formulario de contacto.\nLe agradecería mucho.\n\nQue tengan un día maravilloso :)\n\nAtentamente\n",
         "alt": "mi foto"
     },
     "edu": {
-        "title": "Educación",
-        "school": "Nombre de la escuela",
-        "alt": "logo de la escuela",
-        "faculty": "facultad",
-        "spec": "especialización",
-        "path": "enlace del logo",
-        "type": "tipo",
-        "sDate": "Fecha de inicio",
-        "eDate": "Fecha de finalización",
-        "course": "Nombre del curso",
-        "desc": "descripción",
-        "mark": "nota: ",
-        "courses": "los cursos",
-        "+course": "Añadir un curso",
-        "place": {
-            "school": "Hogwarts, Colegio de Magia",
-            "alt": "logo de la escuela",
-            "faculty": "Ravenclaw",
-            "spec": "domesticando bestias salvajes",
-            "path": "externo o relativo",
-            "type": "maestría",
-            "course": "Alquimia",
-            "desc": "preparando y bebiendo pociones"
-        }
+        "title": "Educación"
     },
     "work": {
-        "title": "Experiencia laboral",
-        "company": "Nombre de la empresa",
-        "position": "puesto",
-        "path": "enlace del logo",
-        "alt": "logo de la empresa",
-        "sDate": "Fecha de inicio",
-        "eDate": "Fecha de finalización",
-        "resps": "Responsabilidades",
-        "+resp": "Añadir responsabilidad",
-        "resp": "Responsabilidad",
-        "place": {
-            "company": "Monstruos, S.A.",
-            "position": "coco",
-            "path": "externo o relativo",
-            "alt": "logo de la empresa",
-            "resp": "ocultarsando debajo la cama"
-        }
+        "title": "Experiencia laboral"
     },
     "skills": {
         "title": "Habilidades",
-        "name": "Nombre de la habilidad",
-        "path": "enlace de la habilidad",
-        "details": "detalles",
-        "prof": "Competencia",
-        "tags": "hashtags",
-        "filter": "Busca por ejemplo: idioma",
-        "place": {
-            "name": "Huevos revueltos",
-            "path": "externo o relativo",
-            "details": "probablemente comestible",
-            "prof": "8",
-            "tags": "#huevos#comida#desayuno"
-        }
+        "tech": "Tecnologías",
+        "langs": "Idiomas",
+        "soft": "Software",
+        "misc": "Otros",
+        "close": "Cerrar",
+        "sName": "Habilidad",
+        "sDesc": "Haga clic en cualquier habilidad para ver los detalles. \nLa mayoría de estas habilidades son autodidactos así que las notas no quizá estar precisos."
     },
     "contact": {
         "main": "Si estás interesado, puede contactarme con formulario abajo o los enlaces sociales",
         "title": "Contacto",
         "name": "Nombre",
         "mail": "Correro electronico",
-        "query": "pregunta",
+        "query": "Mensaje",
         "send": "Enviar",
-        "+social": "Añadir enlace sociale",
-        "msgSent": "Muchos gracias por su interés. Pondré en contacto tan pronto como puedo."
-    },
-    "social": {
-        "name": "página social",
-        "icon": "icono social",
-        "link": "enlace de la página"
+        "msgSent": "Muchos gracias por su interés. Pondré en contacto tan pronto como puedo.",
+        "nameEmpty": "Por favor ingrese su nombre",
+        "mailEmpty": "Por favor ingrese su correo electrónico",
+        "mailInvalid": "Email inválido",
+        "queryEmpty": "Mensaje no puede vacío"
     },
     "footer": {
         "alt": "mi foto",
         "text": "Hecho por mí mismo",
-        "access": "Acceso",
-        "username": "Usario",
-        "password": "Contraseña",
-        "login": "Iniciar sesión",
-        "reg": "Registro",
-        "logout": "Cerrar sesión",
-        "lang": "no su idioma?",
-        "regtext": "todavía no tiene una cuenta? ",
-        "getback": "Volver a inicio",
-        "wrongpass": "Contraseña incorrecta",
-        "usertaken": "Nombra ya tomado"
+        "lang": "no su idioma?"
     },
-    "util": {
-        "save": "Guardar",
-        "cancel": "Cancelar",
-        "edit": "Editar",
-        "delete": "Borrar"
-    },
-    "control": {
-        "commit": "Cometer",
-        "discard": "Descartar",
-        "clone": "Clonar",
-        "logout": "Salir"
+    "meta": {
+        "metaContent": "Me llamo Artur Maciejaszek y eso es mi curriculum vitae. Vivo en Poznań, Polonia y actual estoy buscando un trabajo como junior desarrollador web. Me gustaría trabajar con Angular 5 pero mejoro mis habilidades y aprendo más tecnologías cada día",
+        "metaDescription": "Bienvenido \nMe llamo Artur Maciejaszek y estoy buscando un trabajo en IT idustria. Por favor comprobar esta página web si buscan junior desarrollador web"
     }
 }

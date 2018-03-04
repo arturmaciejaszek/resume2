@@ -1,7 +1,7 @@
 {
     "home": {
         "title": "Welcome",
-        "greeting": "Foremost I would like to thank you for visiting my site, which is in fact my résumé. \nI am a graduate of IT related studies (class '13), I have a master in Management ('15) and in November '17 I decided to change my occupation by picking up programming, with front-end or full-stack in mind, the result of which you can see on this site.\n\tI live in Poznań, Poland and I am currently looking for a job in the Industry, where I will be able to improve my skills and get aided in my programming endeavors. I am highly communicative. Most of my life I worked with people by supporting marketing events and fair exhibitions. Finishing Business Communication, IT and Econometry studies made me a mix of different worlds. If you are looking for a person, who in a long run, can be a bridge between departments or who can fit in diverse roles I might be the one for the job.\n\n\tIf you would like to contact me or leave some feedback you can use the contact form.\nI will highly appreciate that.\n\nAlso I wish you a marvelous day :)\n\nBest regards\n",
+        "greeting": "Foremost I would like to thank you for visiting my site, which is in fact my résumé. \nI am a graduate of IT related studies (class '13), I have a master in Management ('15) and in November '17 I decided to change my occupation by picking up programming, with front-end or full-stack in mind, the result of which you can see on this site.\n\tI live in Poznań, Poland and I am currently looking for a job in the Industry, where I will be able to improve my skills and get aided in my programming endeavors. I am highly communicative. Most of my life I worked with people by supporting marketing events and fair exhibitions. Finishing Business Communication, IT and Econometrics studies made me a mix of different worlds. If you are looking for a person, who in a long run, can be a bridge between departments or who can fit in diverse roles I might be the one for the job.\n\n\tIf you would like to contact me or leave some feedback you can use the contact form.\nI will highly appreciate that.\n\nI wish you a marvelous day :)\n\nBest regards\n",
         "alt": "My photo"
     },
     "edu": {
@@ -37,5 +37,9 @@
         "alt": "my photo",
         "text": "Made with my own two hands",
         "lang": "not your language?"
+    },
+    "meta": {
+        "metaContent": "My name is Artur Maciejaszek and this is my resume. I am based in Poznań, Poland and I am currently looking for a job in IT industry. Preferably working with Angular 5 but I keep improving and learning more technologies on daily basis",
+        "metaDescription": "Hello there \nMy name is Artur Maciejaszek and I'm currently looking for work in IT Industry. Please check out this site if you are looking for a junior web developer"
     }
 }

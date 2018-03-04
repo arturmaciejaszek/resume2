@@ -1,3 +1,4 @@
+import { Meta } from '@angular/platform-browser';
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs/Subject';
 
@@ -11,11 +12,13 @@ export class DataService {
     dataSubject = new Subject<{education: any[], skills: {}, work: any[]}>();
     loadingIndicator = new Subject<boolean>();
 
-
-    constructor(private translate: TranslateService, private db: AngularFirestore) {}
+    constructor(private translate: TranslateService, private db: AngularFirestore, private meta: Meta) {}
 
     dataInit() {
-        this.translate.onLangChange.subscribe( res => this.fetchData(res.lang) );
+        this.translate.onLangChange.subscribe( res => {
+            this.fetchData(res.lang);
+            this.translateTags();
+        });
     }
 
     fetchData(lang: string) {
@@ -34,6 +37,25 @@ export class DataService {
                 this.dataSubject.next({...this.data});
             });
     }
+
+    translateTags() {
+        let content;
+        let desc;
+        this.translate.get('meta').subscribe( res => {
+            content = res.metaContent;
+            desc = res.metaDescription;
+        }).unsubscribe();
+
+        this.meta.updateTag({ name: 'description', content: content });
+
+        this.meta.updateTag({ name: 'twitter:card', content: 'summary' });
+        this.meta.updateTag({ name: 'twitter:site', content: 'arturmaciejaszek.pl' });
+        this.meta.updateTag({ name: 'twitter:description', content: desc });
+
+        this.meta.updateTag({ property: 'og:type', content: 'article' });
+        this.meta.updateTag({ property: 'og:site_name', content: 'AngularFirebase' });
+        this.meta.updateTag({ property: 'og:description', content: desc });
+      }
 
 
 }

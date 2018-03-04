@@ -1,112 +1,45 @@
 {
     "home": {
         "title": "Witam",
-        "name": "Imię i nazwisko",
         "greeting": "Przede wszystkim chciałbym podziękować za zainteresowanie tą stroną, która jest moim Curriculum vitae.\nJestem absolwentem studiów informatycznych (rok '13), magistrem Zarządzania ('15) i w listopadzie 2017 roku postanowiłem zmienić swoją ścieżkę kariery poprzez naukę programowania z nastawieniem na front-end lub full-stack, wynikiem czego jest niniejsza strona.\n\tMieszkam w Poznaniu i aktualnie poszukję pracy w branży, w której dostanę wsparcię i będę mógł rozwijać moję umiejętności programistyczne. Jestem osobą komunikatywną. Większość życia pracowałem z ludźmi przez realizacje wydarzeń marketingowych i uczestniczenie w ekspozycjach targowych. Ukończone studia z Komunikacji w Biznesie, Informatyki i Ekonometrii pozwalają mi spojrzeć na problemy z różnych perspektyw. Jeżeli szukacie Państwo osoby, która, docolowo, może być łącznikiem między różnymi działami lub która sprosta zróżnicowanym wymaganiom, to możliwe że jestem odpowiednią osobą na takie stanowisko.\n\n\tW przypadku chęci kontaktu lub w przypadku jakichkolwiek uwag, proszę o użycie formularza kontaktowego.\nBędę bardzo wdzięczny.\n\nŻyczę wspaniałego dnia :)\n\nZ poważaniem ",
         "alt": "moje zdjęcie"
     },
     "edu": {
-        "title": "Edukacja ",
-        "school": "Nazwa szkoły",
-        "faculty": "Wydział",
-        "spec": "Specializacja",
-        "path": "logo - ścieżka",
-        "type": "typ studiów",
-        "sDate": "Data rozpoczęcia",
-        "eDate": "Data zakończenia",
-        "course": "Nazwa przedmiotu",
-        "desc": "opis",
-        "mark": "ocena: ",
-        "courses": "Przedmioty",
-        "+course": "Dodaj przedmiot",
-        "place": {
-            "school": "Hogwart Szkoła Magii",
-            "alt": "logo szkoły",
-            "faculty": "Ravenclaw",
-            "spec": "Ujarzmianie dzikich bestiis",
-            "path": "relatywna lub link zewnętrzny",
-            "type": "magisterskie",
-            "course": "Alchemia",
-            "desc": "warzenie i picie eliksirów"
-        }
+        "title": "Edukacja "
     },
     "work": {
-        "title": "Doświadczenie zawodowe",
-        "company": "Nazwa firmy",
-        "position": "stanowisko",
-        "path": "logo - ścieżka",
-        "sDate": "Data rozpoczęcia",
-        "eDate": "Data zakończenia",
-        "resps": "Zakres obowiązków",
-        "+resp": "Dodaj obowiązek",
-        "resp": "Obowiązek",
-        "place": {
-            "company": "Potwory i spółka",
-            "position": "straszydło",
-            "path": "relatywna lub link zewnętrzny",
-            "alt": "logo firmy",
-            "resp": "chowanie się pod łóżkiem"
-        }
+        "title": "Doświadczenie zawodowe"
     },
     "skills": {
         "title": "Umiejętności",
-        "name": "Nazwa",
-        "path": "obraz - ścieżka",
-        "details": "opis",
-        "prof": "biegłość",
-        "tags": "tagi",
-        "filter": "Wyszukaj: np. język",
-        "place": {
-            "name": "Jajecznica",
-            "path": "relatywna lub link zewnętrzny",
-            "details": "prawdopodobnie jadalna",
-            "prof": "8",
-            "tags": "#jajecznica#jedzenie#śniadanie"
-        }
+        "tech": "Technologie",
+        "langs": "Języki",
+        "soft": "Oprogramowanie",
+        "misc": "Inne",
+        "close": "Zamknij",
+        "sName": "Umiejętność",
+        "sDesc": "Kliknij w ikonę aby zobaczyć szczegóły. Większość wyświetlonych umiejętności nauczyłem się sam, więc ocena poziomu biegłości jest trudna do oszacowania"
     },
     "contact": {
         "main": "W przypadku zainteresowania proszę o kontakt poprzez poniższy formularz lub social media",
         "title": "Kontakt",
         "name": "Imię i nazwisko",
         "mail": "Adres email",
-        "query": "wiadomość",
+        "query": "Wiadomość",
         "send": "Wyślij",
-        "+social": "Dodaj Link",
-        "site": "Nazwa strony",
-        "class": "Klasa Font Awesome",
-        "link": "strona - link",
-        "msgSent": "Dziękuję za zainteresowanie. Odezwę się najszybciej jak będę mógł."
-    },
-    "social": {
-        "name": "nazwa serwisu",
-        "icon": "ikona serwisu",
-        "link": "link do strony"
+        "msgSent": "Dziękuję za zainteresowanie. Odezwę się najszybciej jak będę mógł.",
+        "nameEmpty": "Proszę o wpisanie imienia",
+        "mailEmpty": "Proszę o wpisanie adresu email",
+        "mailInvalid": "Nieprawidłowy adres email",
+        "queryEmpty": "Wiadomość nie może byc pusta"
     },
     "footer": {
         "alt": "moje zdjęcie",
         "text": "Strona stworzona przeze mnie",
-        "access": "Dostęp",
-        "username": "Użytkownik",
-        "password": "Hasło",
-        "login": "Zaloguj",
-        "reg": "Zarejestruj",
-        "logout": "Wyloguj",
-        "lang": "wolisz inny język?",
-        "regtext": "Nie masz jeszcze konta? ",
-        "getback": "Powrót do loginu",
-        "wrongpass": "Złe hasło",
-        "usertaken": "Nazwa użytkownika już zajęta"
+        "lang": "wolisz inny język?"
     },
-    "util": {
-        "save": "Zapisz",
-        "cancel": "Anuluj",
-        "edit": "Edytuj",
-        "delete": "Usuń"
-    },
-    "control": {
-        "commit": "Wyślij",
-        "discard": "Odrzuć",
-        "clone": "Klonuj",
-        "logout": "Wyjdź"
+    "meta": {
+        "metaContent": "Nazywam się Artur Maciejaszek i oto moje Curriculum Vitae. Mieszkam w Poznaniu i obecnie szukam pracy w branży IT. Chciałbym pracować przy użyciu framework'u Angular 5 ale ciągle poszerzam swoją wiedzę i uczę się nowych technologii",
+        "metaDescription": "Witam serdecznie \nNazywam się Artur Maciejaszek i obecnie szukam pracy w branży IT. Jeżeli szukacie Państwo młodszego web developera to proszę o odwiedzenie mojej strony"
     }
 }
