@@ -32,9 +32,8 @@ export class SkillsComponent implements OnInit, OnDestroy {
       this.selectedSkill.details = res.sDesc;
     });
     this.dataSub = this.data.dataSubject
-      .map( res => res.skills)
       .subscribe(res => {
-        this.dataState = res;
+        this.dataState = res.skills;
     } );
   }
 

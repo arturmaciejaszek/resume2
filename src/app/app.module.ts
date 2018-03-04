@@ -7,13 +7,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 
-import { AngularFireModule } from 'angularfire2';
-import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { TranslateModule, TranslateLoader, TranslateService} from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { AppComponent } from './app.component';
-import { environment } from './../environments/environment';
 
 import { DataService } from './shared/data.service';
 import { ResumeComponent } from './resume/resume.component';
@@ -37,8 +34,6 @@ const appRoutes: Routes = [
     ContactComponent,
   ],
   imports: [
-    AngularFirestoreModule,
-    AngularFireModule.initializeApp(environment.fireConfig),
     SharedModule,
     BrowserModule.withServerTransition({ appId: 'resumeUniversal'}),
     RouterModule.forRoot(appRoutes),
