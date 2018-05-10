@@ -1,6 +1,6 @@
 <section class="contact">
   <div class="section__title">
-      <h2>{{ 'contact.title' | translate }}</h2>
+    <h2>{{ 'contact.title' | translate }}</h2>
   </div>
 
   <h4 *ngIf="!msgSent">{{ 'contact.main' | translate }}</h4>
@@ -11,65 +11,45 @@
       <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around center">
         <div fxLayout="column" fxLayoutGap="10px">
           <mat-form-field>
-              <input 
-                matInput 
-                placeholder="{{ 'contact.name' | translate }}"
-                ngModel
-                autocomplete="name"
-                required
-                name="name"
-                #nameInput="ngModel">
-                <mat-error *ngIf="nameInput.hasError('required')">{{ 'contact.nameEmpty' | translate }}</mat-error>
+            <input matInput placeholder="{{ 'contact.name' | translate }}" ngModel autocomplete="name" required name="name" #nameInput="ngModel">
+            <mat-error *ngIf="nameInput.hasError('required')">{{ 'contact.nameEmpty' | translate }}</mat-error>
           </mat-form-field>
           <mat-form-field>
-              <input 
-                matInput 
-                placeholder="{{ 'contact.mail' | translate }}"
-                ngModel
-                autocomplete="email"
-                [pattern]="pat"
-                required
-                name="email"
-                #emailInput="ngModel">
-                <mat-error *ngIf="emailInput.hasError('required')">{{ 'contact.mailEmpty' | translate }}</mat-error>
-                <mat-error *ngIf="!emailInput.hasError('required')">{{ 'contact.mailInvalid' | translate }}</mat-error>
+            <input matInput placeholder="{{ 'contact.mail' | translate }}" ngModel autocomplete="email" [pattern]="pat" required name="email"
+              #emailInput="ngModel">
+            <mat-error *ngIf="emailInput.hasError('required')">{{ 'contact.mailEmpty' | translate }}</mat-error>
+            <mat-error *ngIf="!emailInput.hasError('required')">{{ 'contact.mailInvalid' | translate }}</mat-error>
           </mat-form-field>
         </div>
         <div fxLayout="column">
           <mat-form-field class="area">
-            <textarea 
-              matInput 
-              placeholder="{{ 'contact.query' | translate }}"
-              ngModel
-              required
-              name="query"
-              matTextareaAutosize matAutosizeMinRows="5"
+            <textarea matInput placeholder="{{ 'contact.query' | translate }}" ngModel required name="query" matTextareaAutosize matAutosizeMinRows="5"
               #queryInput="ngModel"></textarea>
-              <mat-error *ngIf="queryInput.hasError('required')">{{ 'contact.queryEmpty' | translate }}</mat-error>
+            <mat-error *ngIf="queryInput.hasError('required')">{{ 'contact.queryEmpty' | translate }}</mat-error>
           </mat-form-field>
         </div>
       </div>
       <button *ngIf="!showSpinner" type="submit" mat-raised-button color="primary" [disabled]="f.invalid">{{ 'contact.send' | translate }}</button>
-      <mat-spinner *ngIf="showSpinner" diameter="40"></mat-spinner>  
-      </form>
+      <mat-spinner *ngIf="showSpinner" diameter="40"></mat-spinner>
+    </form>
   </div>
 
   <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px" class="socials">
-      <a href="https://www.linkedin.com/in/arturmaciejaszek" mat-fab color="accent">
-        <svg viewBox="0 0 200 200" class="logo">
-          <use xlink:href="/assets/logos.svg#linkedin"></use>
-        </svg>
-      </a>
-      <a href="https://github.com/arturmaciejaszek" mat-fab color="accent">
-        <svg viewBox="0 0 1000 1000" class="logo">
-          <use xlink:href="/assets/logos.svg#github"></use>
-        </svg>
-      </a>
-      <a href="https://www.facebook.com/artur.maciejaszek" mat-fab color="accent">
-        <svg viewBox="0 0 25 25" class="logo">
-          <use xlink:href="/assets/logos.svg#facebook"></use>
-        </svg>
-      </a>
+    <a href="https://www.linkedin.com/in/arturmaciejaszek" target="_blank" mat-fab color="accent">
+      <svg viewBox="0 0 200 200" class="logo">
+        <use href="/assets/logos.svg#linkedin"></use>
+      </svg>
+    </a>
+    <a href="https://github.com/arturmaciejaszek" target="_blank" mat-fab color="accent">
+      <svg viewBox="0 0 1000 1000" class="logo">
+        <use href="/assets/logos.svg#github"></use>
+      </svg>
+    </a>
+    <a href="https://www.facebook.com/artur.maciejaszek" target="_blank" mat-fab color="accent">
+      <svg viewBox="0 0 25 25" class="logo">
+        <use href="/assets/logos.svg#facebook"></use>
+      </svg>
+    </a>
   </div>
 
 </section>
