@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Subscription } from 'rxjs/Subscription';
+import { Subscription } from 'rxjs';
 
 import { DataService } from './../shared/data.service';
 
@@ -13,18 +13,16 @@ export class EducationComponent implements OnInit, OnDestroy {
   dataState: any = [];
   showSpinner = true;
 
-  constructor(private data: DataService) { }
+  constructor(private data: DataService) {}
 
   ngOnInit() {
-    this.dataSub = this.data.dataSubject
-      .subscribe(res => {
-        this.dataState = res.education;
-        this.showSpinner = false;
-    } );
+    this.dataSub = this.data.dataSubject.subscribe(res => {
+      this.dataState = res.education;
+      this.showSpinner = false;
+    });
   }
 
   ngOnDestroy() {
     this.dataSub.unsubscribe();
   }
-
 }

@@ -1,9 +1,7 @@
 import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/take';
-import 'rxjs/add/operator/do';
-import { Subscription } from 'rxjs/Subscription';
+import { Subscription, Observable } from 'rxjs';
+import { take, tap } from 'rxjs/operators';
 import { MatDialog } from '@angular/material';
 
 import { DataService } from './../shared/data.service';
@@ -24,21 +22,32 @@ export class SkillsComponent implements OnInit, OnDestroy {
     details: null,
     prof: null
   };
-  stars = {full: [], half: [], empty: []};
+  stars = { full: [], half: [], empty: [] };
 
-  constructor(private data: DataService, private translate: TranslateService, private dialog: MatDialog) { }
+  constructor(
+    private data: DataService,
+    private translate: TranslateService,
+    private dialog: MatDialog
+  ) {}
 
   ngOnInit() {
     this.dataSub = this.data.dataSubject
-      .do( () => this.translate.get('skills').take(1).subscribe( t => {
-        this.selectedSkill.name = t.sName;
-        this.selectedSkill.details = t.sDesc;
-        this.stars =  {full: [], half: [], empty: []};
-      }))
+      .pipe(
+        tap(() =>
+          this.translate
+            .get('skills')
+            .pipe(take(1))
+            .subscribe(t => {
+              this.selectedSkill.name = t.sName;
+              this.selectedSkill.details = t.sDesc;
+              this.stars = { full: [], half: [], empty: [] };
+            })
+        )
+      )
       .subscribe(res => {
         this.dataState = res.skills;
         this.showSpinner = false;
-    } );
+      });
   }
 
   onMobileTap(item: Skill) {
@@ -51,7 +60,7 @@ export class SkillsComponent implements OnInit, OnDestroy {
       height: '80vh',
       width: '80vw',
       maxHeight: '450px'
-  });
+    });
   }
 
   ngOnDestroy() {
@@ -60,7 +69,7 @@ export class SkillsComponent implements OnInit, OnDestroy {
 
   setItem(skill: Skill) {
     this.selectedSkill = skill;
-    this.stars = {full: [], half: [], empty: []};
+    this.stars = { full: [], half: [], empty: [] };
     this.profCheck();
   }
 
@@ -68,10 +77,10 @@ export class SkillsComponent implements OnInit, OnDestroy {
   profCheck() {
     const prof = this.selectedSkill.prof;
     if (prof !== null || undefined) {
-      for (let i = 0; i < Math.floor(prof / 2); i++ ) {
+      for (let i = 0; i < Math.floor(prof / 2); i++) {
         this.stars.full.push(1);
       }
-      for (let i = 0; i < Math.floor(3 - (prof / 2)); i++) {
+      for (let i = 0; i < Math.floor(3 - prof / 2); i++) {
         this.stars.empty.push(1);
       }
       if (prof % 2 !== 0) {
@@ -79,6 +88,4 @@ export class SkillsComponent implements OnInit, OnDestroy {
       }
     }
   }
-
-
 }

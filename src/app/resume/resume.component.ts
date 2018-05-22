@@ -1,7 +1,7 @@
-import { DataService } from './../shared/data.service';
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
+import { DataService } from './../shared/data.service';
 // import { en } from './../../data';
 
 @Component({
@@ -13,7 +13,7 @@ export class ResumeComponent implements OnInit {
   langs: string[];
   language = this.translate.getBrowserLang();
 
-  constructor(private translate: TranslateService, private data: DataService) { }
+  constructor(private translate: TranslateService, private data: DataService) {}
 
   ngOnInit() {
     this.data.dataInit();
@@ -25,5 +25,4 @@ export class ResumeComponent implements OnInit {
     this.language = e;
     this.translate.use(this.language);
   }
-
 }

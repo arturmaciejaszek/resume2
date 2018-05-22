@@ -1,46 +1,49 @@
-import { environment } from './../environments/environment';
-import { UniversalTranslateLoader } from '@ngx-universal/translate-loader';
-import { NgModule, Inject, PLATFORM_ID } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule, HttpClient} from '@angular/common/http';
-import { HttpModule } from '@angular/http';
-import { RouterModule, Routes } from '@angular/router';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { Inject, NgModule, PLATFORM_ID } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
+import { HttpModule } from '@angular/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule, Routes } from '@angular/router';
+import {
+  TranslateModule,
+  TranslateService,
+  TranslateLoader
+} from '@ngx-translate/core';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
-import { TranslateModule, TranslateLoader, TranslateService} from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-
+import { environment } from './../environments/environment';
 import { AppComponent } from './app.component';
-
-import { DataService } from './shared/data.service';
-import { ResumeComponent } from './resume/resume.component';
-import { WelcomeComponent } from './welcome/welcome.component';
 import { ContactComponent } from './contact/contact.component';
+import { EducationModule } from './education/education.module';
+import { ResumeComponent } from './resume/resume.component';
+import { DataService } from './shared/data.service';
 import { SharedModule } from './shared/shared.module';
 import { SkillsModule } from './skills/skills.module';
-import { EducationModule } from './education/education.module';
+import { WelcomeComponent } from './welcome/welcome.component';
 import { WorkModule } from './work/work.module';
 
 const appRoutes: Routes = [
-  {path: '', component: ResumeComponent, pathMatch: 'full'},
-    {path: '**', redirectTo: ''}
+  { path: '', component: ResumeComponent, pathMatch: 'full' },
+  { path: '**', redirectTo: '' }
 ];
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
     AppComponent,
     ResumeComponent,
     WelcomeComponent,
-    ContactComponent,
+    ContactComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.fireConfig),
     AngularFirestoreModule,
     SharedModule,
-    BrowserModule.withServerTransition({ appId: 'resumeUniversal'}),
+    // BrowserModule.withServerTransition({ appId: 'resumeUniversal'}),
     RouterModule.forRoot(appRoutes),
     HttpClientModule,
     HttpModule,
@@ -48,13 +51,17 @@ const appRoutes: Routes = [
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
-        useFactory: translateFactory,
-        deps: [
-          PLATFORM_ID,
-          HttpClient
-        ]
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
       }
     }),
+    // TranslateModule.forRoot({
+    //   loader: {
+    //     provide: TranslateLoader,
+    //     useFactory: HttpLoaderFactory,
+    //     deps: [PLATFORM_ID, HttpClient]
+    //   }
+    // }),
     FormsModule,
     SkillsModule,
     EducationModule,
@@ -62,15 +69,23 @@ const appRoutes: Routes = [
   ],
   providers: [TranslateService, DataService],
   bootstrap: [AppComponent]
-
 })
 export class AppModule {
-  constructor(@Inject(PLATFORM_ID) private readonly platformId: any) {
-  }
- }
-
-export function translateFactory(platformId: any, http: HttpClient): TranslateLoader {
-  const browserLoader = new TranslateHttpLoader(http);
-
-  return new UniversalTranslateLoader(platformId, browserLoader, 'dist-server/assets/i18n');
+  constructor() {}
 }
+// export class AppModule {
+//   constructor(@Inject(PLATFORM_ID) private readonly platformId: any) {}
+// }
+
+// export function translateFactory(
+//   platformId: any,
+//   http: HttpClient
+// ): TranslateLoader {
+//   const browserLoader = new TranslateHttpLoader(this.http);
+
+//   return new UniversalTranslateLoader(
+//     platformId,
+//     browserLoader,
+//     'dist-server/assets/i18n'
+//   );
+// }
