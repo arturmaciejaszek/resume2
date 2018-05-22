@@ -23,6 +23,7 @@ import { SkillsModule } from './skills/skills.module';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { WorkModule } from './work/work.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { PortfolioModule } from './portfolio/portfolio.module';
 
 const appRoutes: Routes = [
   { path: '', component: ResumeComponent, pathMatch: 'full' },
@@ -67,7 +68,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     SkillsModule,
     EducationModule,
     WorkModule,
-    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
+    PortfolioModule,
+    ServiceWorkerModule.register('/ngsw-worker.js', {
+      enabled: environment.production
+    })
   ],
   providers: [TranslateService, DataService],
   bootstrap: [AppComponent]

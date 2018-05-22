@@ -53,6 +53,7 @@
     "gulp": "^3.9.1",
     "gulp-svgmin": "^1.2.4",
     "gulp-svgstore": "^6.1.1",
+    "gulp-webp": "^3.0.0",
     "jasmine-core": "~2.8.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~2.0.0",
