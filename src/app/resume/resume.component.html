@@ -32,7 +32,7 @@
     <span fxFlex></span>
     <div fxLayout="row" fxLayoutAlign="center center">
       <p>{{ 'footer.lang' | translate}}</p>
-      <select [(ngModel)]="language" (ngModelChange)="onChange($event)">
+      <select [(ngModel)]="language" (ngModelChange)="onChange($event)" aria-label="select">
         <option *ngFor="let lang of langs" [ngValue]="lang">{{lang}}</option>
       </select>
     </div>
