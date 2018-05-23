@@ -10,6 +10,7 @@ config.js
 
 # assets
 /src/assets/logosBCKUP
+/src/assets/converter
 
 # environments
 /src/environments

@@ -3,7 +3,16 @@
     <h2>{{ 'port.title' | translate }}</h2>
   </div>
 
-  <div class="portfolio__items">
-
+  <div class="portfolio__items" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center">
+    <div class="portfolio__image" (click)="link.click()" fxFlex="50" fxFlexOrder.xs="2">
+      <img src="./assets/img/bargain.webp" alt="sample app">
+      <mat-icon color="primary">launch</mat-icon>
+    </div>
+    <div class="portfolio__overview" fxFlex="50" fxFlexOrder.xs="1">
+      <h4>{{ 'port.name' | translate }}</h4>
+      <p>{{ 'port.overview' | translate }}</p>
+    </div>
   </div>
 </section>
+
+<a href="https://project-bargain.firebaseapp.com/auth" #link target="_blank" rel="noopener">

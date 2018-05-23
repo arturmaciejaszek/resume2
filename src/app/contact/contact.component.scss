@@ -1,42 +1,51 @@
 .contact {
-    min-height: 50vh;
-    margin-bottom: 4rem;
+  min-height: 50vh;
+  margin-bottom: 4rem;
 
-    &__box {
-        min-height: 22rem;
-        width: 80%;
-        margin: 1rem auto;
-        padding: 2rem;
-    }
-
+  &__box {
+    min-height: 22rem;
+    width: 80%;
+    margin: 1rem auto;
+    padding: 2rem;
+  }
 }
 
 .sent {
-    color: green;
+  color: green;
 }
 
 form {
-    // height: 80%;
+  // height: 80%;
 
-    & > div {
-        height: 100%;
-        width: 100%;
-    }
+  & > div {
+    height: 100%;
+    width: 100%;
+  }
 
-    & > button {
-        margin-top: 1.5rem;
-    }
+  & > button {
+    margin-top: 1.5rem;
+  }
 }
 
 .area {
-    min-width: 25vw;
+  min-width: 25vw;
 }
 
 .logo {
-    height: 2rem;
-    width: auto;
+  height: 2rem;
+  width: auto;
 }
 
 .socials {
-    margin-top: 4rem;
+  margin-top: 4rem;
+}
+
+.fixer {
+  margin-top: 3rem;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .contact {
+    min-height: 40vh;
+  }
 }

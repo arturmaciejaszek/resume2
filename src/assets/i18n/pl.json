@@ -1,45 +1,57 @@
 {
-    "home": {
-        "title": "Witam",
-        "greeting": "Przede wszystkim chciałbym podziękować za zainteresowanie tą stroną, która jest moim Curriculum vitae.\nJestem absolwentem studiów informatycznych (rok '13), magistrem Zarządzania ('15) i w listopadzie 2017 roku postanowiłem zmienić swoją ścieżkę kariery poprzez naukę programowania z nastawieniem na front-end, wynikiem czego jest niniejsza strona.\n\tMieszkam w Poznaniu i aktualnie poszukję pracy w branży, w której dostanę wsparcię i będę mógł rozwijać moje umiejętności programistyczne. Jestem osobą komunikatywną. Większość życia pracowałem z ludźmi przez realizacje wydarzeń marketingowych i uczestniczenie w ekspozycjach targowych. Ukończone studia z Komunikacji w Biznesie, Informatyki i Ekonometrii pozwalają mi spojrzeć na problemy z różnych perspektyw. Jeżeli szukacie Państwo osoby, która, docelowo, może być łącznikiem między różnymi działami lub która sprosta zróżnicowanym wymaganiom, to możliwe że jestem odpowiednią osobą na takie stanowisko.\n\n\tW przypadku chęci kontaktu lub w przypadku jakichkolwiek uwag, proszę o użycie formularza kontaktowego.\nBędę bardzo wdzięczny.\n\nŻyczę wspaniałego dnia :)\n\nZ poważaniem ",
-        "alt": "moje zdjęcie"
-    },
-    "edu": {
-        "title": "Edukacja "
-    },
-    "work": {
-        "title": "Doświadczenie zawodowe"
-    },
-    "skills": {
-        "title": "Umiejętności",
-        "tech": "Technologie",
-        "langs": "Języki",
-        "soft": "Oprogramowanie",
-        "misc": "Inne",
-        "close": "Zamknij",
-        "sName": "Umiejętność",
-        "sDesc": "Kliknij w ikonę aby zobaczyć szczegóły. Większość wyświetlonych umiejętności nauczyłem się sam, więc ocena poziomu biegłości jest trudna do oszacowania"
-    },
-    "contact": {
-        "main": "W przypadku zainteresowania proszę o kontakt poprzez poniższy formularz lub social media",
-        "title": "Kontakt",
-        "name": "Imię i nazwisko",
-        "mail": "Adres email",
-        "query": "Wiadomość",
-        "send": "Wyślij",
-        "msgSent": "Dziękuję za zainteresowanie. Odezwę się najszybciej jak będę mógł.",
-        "nameEmpty": "Proszę o wpisanie imienia",
-        "mailEmpty": "Proszę o wpisanie adresu email",
-        "mailInvalid": "Nieprawidłowy adres email",
-        "queryEmpty": "Wiadomość nie może byc pusta"
-    },
-    "footer": {
-        "alt": "moje zdjęcie",
-        "text": "Strona stworzona przeze mnie",
-        "lang": "wolisz inny język?"
-    },
-    "meta": {
-        "metaContent": "Nazywam się Artur Maciejaszek i oto moje Curriculum Vitae. Mieszkam w Poznaniu i obecnie szukam pracy w branży IT. Chciałbym pracować przy użyciu framework'u Angular 5 ale ciągle poszerzam swoją wiedzę i uczę się nowych technologii",
-        "metaDescription": "Witam serdecznie, nazywam się Artur Maciejaszek i obecnie szukam pracy w branży IT. Jeżeli szukacie Państwo młodszego web developera to proszę o odwiedzenie mojej strony"
-    }
+  "home": {
+    "title": "Witam",
+    "greeting":
+      "Przede wszystkim chciałbym podziękować za zainteresowanie tą stroną, która jest moim Curriculum vitae.\nJestem absolwentem studiów informatycznych (rok '13), magistrem Zarządzania ('15) i w listopadzie 2017 roku postanowiłem zmienić swoją ścieżkę kariery poprzez naukę programowania z nastawieniem na front-end, wynikiem czego jest niniejsza strona.\n\tMieszkam w Poznaniu i aktualnie poszukję pracy w branży, w której dostanę wsparcię i będę mógł rozwijać moje umiejętności programistyczne. Jestem osobą komunikatywną. Większość życia pracowałem z ludźmi przez realizacje wydarzeń marketingowych i uczestniczenie w ekspozycjach targowych. Ukończone studia z Komunikacji w Biznesie, Informatyki i Ekonometrii pozwalają mi spojrzeć na problemy z różnych perspektyw. Jeżeli szukacie Państwo osoby, która, docelowo, może być łącznikiem między różnymi działami lub która sprosta zróżnicowanym wymaganiom, to możliwe że jestem odpowiednią osobą na takie stanowisko.\n\n\tW przypadku chęci kontaktu lub w przypadku jakichkolwiek uwag, proszę o użycie formularza kontaktowego.\nBędę bardzo wdzięczny.\n\nŻyczę wspaniałego dnia :)\n\nZ poważaniem ",
+    "alt": "moje zdjęcie"
+  },
+  "edu": {
+    "title": "Edukacja "
+  },
+  "work": {
+    "title": "Doświadczenie zawodowe"
+  },
+  "skills": {
+    "title": "Umiejętności",
+    "tech": "Technologie",
+    "langs": "Języki",
+    "soft": "Oprogramowanie",
+    "misc": "Inne",
+    "close": "Zamknij",
+    "sName": "Umiejętność",
+    "sDesc":
+      "Kliknij w ikonę aby zobaczyć szczegóły. Większość wyświetlonych umiejętności nauczyłem się sam, więc ocena poziomu biegłości jest trudna do oszacowania"
+  },
+  "port": {
+    "title": "Kod",
+    "name": "Project Bargain",
+    "overview":
+      "Aplikacja umożliwia wstawianie przedmiotów (głównie używanych) w celu szybkiej sprzedaży.\n\nPoprzez wybór miasta użytkownik może przeglądać wszystkie oferty w danej lokalizacji i kupić przedmiot od razu bądź go zignorować i nigdy więcej nie widzieć.\n\nPo kupieniu przedmiotu, aplikacja umożliwia komunikację (chat) ze sprzedawcą w celu finalizacji transakcji."
+  },
+  "contact": {
+    "main":
+      "W przypadku zainteresowania proszę o kontakt poprzez poniższy formularz lub social media",
+    "title": "Kontakt",
+    "name": "Imię i nazwisko",
+    "mail": "Adres email",
+    "query": "Wiadomość",
+    "send": "Wyślij",
+    "msgSent":
+      "Dziękuję za zainteresowanie. Odezwę się najszybciej jak będę mógł.",
+    "nameEmpty": "Proszę o wpisanie imienia",
+    "mailEmpty": "Proszę o wpisanie adresu email",
+    "mailInvalid": "Nieprawidłowy adres email",
+    "queryEmpty": "Wiadomość nie może byc pusta"
+  },
+  "footer": {
+    "alt": "moje zdjęcie",
+    "text": "Strona stworzona przeze mnie",
+    "lang": "wolisz inny język?"
+  },
+  "meta": {
+    "metaContent":
+      "Nazywam się Artur Maciejaszek i oto moje Curriculum Vitae. Mieszkam w Poznaniu i obecnie szukam pracy w branży IT. Chciałbym pracować przy użyciu framework'u Angular 5 ale ciągle poszerzam swoją wiedzę i uczę się nowych technologii",
+    "metaDescription":
+      "Witam serdecznie, nazywam się Artur Maciejaszek i obecnie szukam pracy w branży IT. Jeżeli szukacie Państwo młodszego web developera to proszę o odwiedzenie mojej strony"
+  }
 }

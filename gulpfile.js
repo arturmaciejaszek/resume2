@@ -31,7 +31,7 @@ gulp.task('svgstore', function() {
 
 gulp.task('webp', () =>
   gulp
-    .src('src/assets/img/*.png')
+    .src('src/assets/converter/*.{png,jpg}')
     .pipe(webp())
     .pipe(gulp.dest('src/assets/img/'))
 );

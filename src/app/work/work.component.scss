@@ -1,11 +1,17 @@
 .work {
-    min-height: 50vh;
+  min-height: 50vh;
 
-    &__items {
-        margin: 5rem auto;
-    }
+  &__items {
+    margin: 5rem auto;
+  }
 }
 
 mat-spinner {
-    margin: 2rem auto;
+  margin: 2rem auto;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .work {
+    min-height: 40vh;
+  }
 }
