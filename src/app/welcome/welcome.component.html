@@ -5,15 +5,17 @@
   <div fxLayoutAlign="center end">
     <div fxLayout="column">
       <div fxFlex fxHide.gt-sm="true">
-        <img class="welcome__photo--mobile" src="./assets/img/am.webp" alt="{{ 'home.alt' | translate }}">
+        <img class="welcome__photo--mobile" src="./assets/img/am.webp" onerror="this.onerror=null; this.src='./assets/img/am.png'"
+          alt="{{ 'home.alt' | translate }}">
       </div>
       <span class="welcome__greeting">
         {{ 'home.greeting' | translate }}
-        <img class="welcome__sig" src="./assets/img/sig.webp" alt="{{ 'home.sig' | translate }}">
+        <img class="welcome__sig" src="./assets/img/sig.webp" onerror="this.onerror=null; this.src='./assets/img/sig.png'" alt="{{ 'home.sig' | translate }}">
       </span>
     </div>
     <div fxFlex="40%" fxHide.lt-md="true">
-      <img class="welcome__photo" src="./assets/img/am-smile.webp" alt="{{ 'home.alt' | translate }}">
+      <img class="welcome__photo" src="./assets/img/am-smile.webp" onerror="this.onerror=null; this.src='./assets/img/am-smile.png'"
+        alt="{{ 'home.alt' | translate }}">
     </div>
   </div>
 </section>

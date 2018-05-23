@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ElementRef } from '@angular/core';
 
 import { Work } from './../../models/work.model';
 
@@ -10,9 +10,13 @@ import { Work } from './../../models/work.model';
 export class WorkItemComponent implements OnInit {
   @Input() work: Work;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  imgFallback(): string {
+    const logo = this.work.logo;
+    const split = logo.split('.');
+    return '/assets/img/' + split[0] + '.png';
   }
-
 }

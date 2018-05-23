@@ -2,7 +2,8 @@
   <mat-expansion-panel-header expandedHeight="120px" collapsedHeight="70px">
     <mat-panel-title>
       <div fxLayout="row" fxLayoutAlign="center center">
-        <img src="/assets/img/{{ work.logo }}" alt="logo" class="logo" fxFlex="60px" fxHide.lt-sm="true">
+        <img src="/assets/img/{{ work.logo }}" #logo (error)="logo.setAttribute('src', imgFallback())" alt="logo" class="logo" fxFlex="60px"
+          fxHide.lt-sm="true">
         <b>{{ work.company }}</b>
       </div>
     </mat-panel-title>
